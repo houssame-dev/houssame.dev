@@ -22,27 +22,27 @@ function Top() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto" id="nav-items">
             <Link to="/" className="link-item">
-              <Nav.Link href="home" className="nav-item">
+              <Nav.Link href="/" className="nav-item">
                 <TiHome size={15} /> Home
               </Nav.Link>
             </Link>
-            <Link to="/about" className="link-item">
-              <Nav.Link href="about" className="nav-item">
+            <Link to="about" className="link-item">
+              <Nav.Link href="#about" className="nav-item">
                 <ImUser size={15} /> About
               </Nav.Link>
             </Link>
-            <Link to="/skills" className="link-item">
-              <Nav.Link href="skills" className="nav-item">
+            <Link to="skills" className="link-item">
+              <Nav.Link href="#skills" className="nav-item">
                 <PiCodeFill size={15} /> Skills
               </Nav.Link>
             </Link>
-            <Link to="/projects" className="link-item">
-              <Nav.Link href="projects" className="nav-item">
+            <Link to="projects" className="link-item">
+              <Nav.Link href="#projects" className="nav-item">
                 <FaFolderOpen  size={15}/> Projects
               </Nav.Link>
             </Link>
-            <Link to="/contact" className="link-item">
-              <Nav.Link href="contact" className="nav-item">
+            <Link to="contact" className="link-item">
+              <Nav.Link href="#contact" className="nav-item">
                <PiPhoneCallFill  size={15}/> Contact
               </Nav.Link>
             </Link>
