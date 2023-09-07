@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+#navbar {
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  margin-top: 2rem;
+  margin-inline: 2rem;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  box-shadow: #ADCFFF 0 -15px 6px inset;
+}
+
+#h-logo {
+  max-width: 30px;
+  transition: all 0.15s;
+}
+
+#h-logo:hover{
+    transform: scale(1.125);
+}
+
+#toggler {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 0px 0px;
+  border: none;
+}
+
+#nav-items {
+  text-align: center;
+  text-decoration: none;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.nav-item {
+  color: black;
+  max-width: fit-content;
+  margin-inline: auto;
+  font-size: 1.3rem;
+  font-family: "Rubik", sans-serif;
+  padding-block: 1px;
+  padding-inline: 1px;
+  font-weight: 900;
+  transition: all 0.15s;
+}
+
+.nav-item:hover {
+  color: gray;
+  transform: scale(1.125);
+}
+
+.social-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  color: black;
+  margin-inline: 0.5rem;
+  transition: all 0.15s;
+}
+
+.social-icon:hover {
+  color: gray;
+  transform: scale(1.325);
+}
+
+@media only screen and (max-width: 991.5px) {
+  .social-icons {
+    margin-block: 2rem;
+  }
+  #nav-items {
+    margin-top: 2rem;
+  }
+  .nav-item {
+    margin-bottom: 2rem;
+  }
+}

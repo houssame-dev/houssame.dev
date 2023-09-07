@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap");
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-container h1 {
+  text-align: center;
+  color: #e5e5e5;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 6vmax;
+  margin-block: 1rem;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+
+.home-container p {
+  text-align: center;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 3vmax;
+  margin-bottom: 4rem;
+  font-weight: 900;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.home-div {
+  text-align: center;
+}
+
+.aboutme-btn {
+  appearance: none;
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -15px 6px inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.aboutme-btn:hover {
+  color: black;
+  background-color: #e5e5e5;
+  box-shadow: #adcfff 0 -12px 6px inset;
+  transform: scale(1.125);
+}
+
+.aboutme-btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .aboutme-btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}

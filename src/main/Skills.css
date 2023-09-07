@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.skill-item {
+  background-color: transparent;
+  color: #e5e5e5;
+  text-align: center;
+  margin-bottom: 2rem;
+  user-select: none;
+  transition: all 0.15s;
+}
+
+.skill-item:hover{
+    color: gray;
+    transform: scale(1.225);
+}
+
+.myprojects-btn {
+    appearance: none;
+    background-color: #e5e5e5;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -15px 6px inset;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: -0.24px;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .myprojects-btn:hover {
+    color: black;
+    background-color: #e5e5e5;
+    box-shadow: #adcfff 0 -12px 6px inset;
+    transform: scale(1.125);
+  }
+  
+  .myprojects-btn:active {
+    transform: scale(1.025);
+  }
+  
+  @media (min-width: 768px) {
+    .myprojects-btn {
+      font-size: 1.5rem;
+      padding: 0.75rem 2rem;
+    }
+  }
