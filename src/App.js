@@ -9,18 +9,15 @@ import Projects from "./main/Projects";
 
 function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
+    <BrowserRouter>
+      <Top />
       <Routes>
-        <Route path="/" element={<Top />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<Projects />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="projects" element={<Projects />} />
       </Routes>
-      </BrowserRouter>
-    </div>
+    </BrowserRouter>
   );
 }
 
