@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Home.css";
 import { Link } from "react-router-dom";
-import { GrNext } from 'react-icons/gr';
+import { GrNext } from "react-icons/gr";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,35 +16,23 @@ function Home() {
   }, []);
 
   return (
-    <Container className="home-container">
+    <Container
+      className="home-container"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000"
+    >
       <Row>
         <Col>
           <h1>
-            <div
-              data-aos="fade-right"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              HOUSSAME
-            </div>{" "}
-            <div
-              data-aos="fade-left"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
-              ERRJEM
-            </div>
+            <div>HOUSSAME</div> <div>ERRJEM</div>
           </h1>
-          <p
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="3000"
-          >
-            FRONT END DEVELOPER, UI/UX DESIGNER
-          </p>
+          <p>FRONT END DEVELOPER, UI/UX DESIGNER</p>
           <div className="home-div">
             <Link to="/about">
-              <Button className="aboutme-btn">About Me <GrNext/></Button>
+              <Button className="aboutme-btn">
+                About Me <GrNext />
+              </Button>
             </Link>
           </div>
         </Col>

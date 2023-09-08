@@ -6,8 +6,8 @@
   margin-top: 2rem;
   margin-inline: 2rem;
   padding-inline: 2rem;
-  padding-block: 0.5rem;
-  box-shadow: #ADCFFF 0 -15px 6px inset;
+  padding-block: 0.5rem 0.7rem;
+  box-shadow: #adcfff 0 -15px 6px inset;
 }
 
 #h-logo {
@@ -15,8 +15,8 @@
   transition: all 0.15s;
 }
 
-#h-logo:hover{
-    transform: scale(1.125);
+#h-logo:hover {
+  transform: scale(1.125);
 }
 
 #toggler {
@@ -24,28 +24,29 @@
   border: none;
 }
 
+#toggler span{
+  color: black;
+  font-size: 40px;
+}
+
 #nav-items {
   text-align: center;
-  text-decoration: none;
 }
 
 .link-item {
   text-decoration: none;
-}
-
-.nav-item {
+  padding-inline: 10px;
   color: black;
   max-width: fit-content;
   margin-inline: auto;
   font-size: 1.3rem;
   font-family: "Rubik", sans-serif;
-  padding-block: 1px;
-  padding-inline: 1px;
+  padding-block: 5px;
   font-weight: 900;
   transition: all 0.15s;
 }
 
-.nav-item:hover {
+.link-item:hover {
   color: gray;
   transform: scale(1.125);
 }
@@ -74,7 +75,14 @@
   #nav-items {
     margin-top: 2rem;
   }
-  .nav-item {
-    margin-bottom: 2rem;
+  .link-item {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350.5px) {
+  #navbar {
+    margin-inline: 1rem;
+    padding-inline: 1rem; 
   }
 }

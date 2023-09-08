@@ -16,16 +16,16 @@ function Skills() {
     AOS.refresh();
   }, []);
   return (
-    <Container className="skills-container">
+    <Container
+      className="skills-container"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000"
+    >
       <Row>
         {SkillsData.map((skill, index) => (
           <Col xs={4} sm={4} md={3} lg={2} key={index}>
-            <div
-              className="skill-item"
-              data-aos="fade-down"
-              data-aos-easing="linear"
-              data-aos-duration="1500"
-            >
+            <div className="skill-item">
               {skill.image} <br /> {skill.title}
             </div>
           </Col>

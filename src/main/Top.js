@@ -26,56 +26,58 @@ function Top() {
         expanded={expanded}
       >
         <Container>
-          <Link to="/" onClick={handleNavItemClick}>
+        <Link to="/" onClick={handleNavItemClick}>
             <img src={h_logo} alt="h-logo" id="h-logo" />
           </Link>
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            id="toggler"
-            onClick={() => setExpanded(!expanded)}
-          />
+          {expanded ? (
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              id="toggler"
+              onClick={() => setExpanded(!expanded)}
+            >
+             <span>X</span> 
+            </Navbar.Toggle>
+          ) : (
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              id="toggler"
+              onClick={() => setExpanded(!expanded)}
+            >
+            <span>☰</span>  
+            </Navbar.Toggle>
+          )}
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto" id="nav-items">
               <Link to="/" className="link-item" onClick={handleNavItemClick}>
-                <span className="nav-item">
-                  <TiHome size={15} /> Home
-                </span>
+                <TiHome size={25} /> Home
               </Link>
               <Link
                 to="/about"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <span className="nav-item">
-                  <ImUser size={15} /> About
-                </span>
+                <ImUser size={25} /> About
               </Link>
               <Link
                 to="/skills"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <span className="nav-item">
-                  <PiCodeFill size={15} /> Skills
-                </span>
+                 <PiCodeFill size={25} /> Skills
               </Link>
               <Link
                 to="/projects"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <span className="nav-item">
-                  <FaFolderOpen size={15} /> Projects
-                </span>
+                <FaFolderOpen size={25} /> Projects
               </Link>
               <Link
                 to="/contact"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <span className="nav-item">
-                  <PiPhoneCallFill size={15} /> Contact
-                </span>
+                <PiPhoneCallFill size={25} /> Contact
               </Link>
             </Nav>
             <div className="social-icons">
@@ -85,9 +87,7 @@ function Top() {
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
               >
-                <span>
-                  <FaGithub size={30} className="social-icon" />
-                </span>
+                <FaGithub size={30} className="social-icon" />
               </a>
               <a
                 href="http://"
@@ -95,9 +95,7 @@ function Top() {
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
               >
-                <span>
-                  <FaLinkedin size={30} className="social-icon" />
-                </span>
+                <FaLinkedin size={30} className="social-icon" />
               </a>
               <a
                 href="http://"
@@ -105,9 +103,7 @@ function Top() {
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
               >
-                <span>
-                  <FaTwitter size={30} className="social-icon" />
-                </span>
+                <FaTwitter size={30} className="social-icon" />
               </a>
             </div>
           </Navbar.Collapse>

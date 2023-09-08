@@ -15,54 +15,31 @@ function About() {
     AOS.refresh();
   }, []);
   return (
-    <Container className="about-container">
+    <Container
+      className="about-container"
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000"
+    >
       <Row>
         <Col>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="500"
-          >
+          <h4>
             👋 I'm HOUSSAME, a React-focused Frontend Developer and UI/UX
             Designer.
           </h4>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-          >
+          <h4>
             🎨 I create pixel-perfect designs and turn them into user-friendly
             web apps.
           </h4>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="1500"
-          >
+          <h4>
             🌐 Constantly learning to stay at the forefront of web development.
           </h4>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="2000"
-          >
+          <h4>
             🤝 Collaborative, creative, and dedicated to delivering outstanding
             digital experiences.
           </h4>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="2500"
-          >
-            🌟 Open to job opportunities!
-          </h4>
-          <h4
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="3000"
-          >
-            Check out my skills :
-          </h4>
+          <h4>🌟 Open to job opportunities!</h4>
+          <h4>Check out my skills :</h4>
           <div className="about-div">
             <Link to="/skills">
               <Button className="myskills-btn">
