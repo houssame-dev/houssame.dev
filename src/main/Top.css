@@ -44,6 +44,9 @@
   padding-block: 5px;
   font-weight: 900;
   transition: all 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-item:hover {

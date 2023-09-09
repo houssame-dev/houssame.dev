@@ -22,7 +22,7 @@ const ProjectsList = [
   {
     title: "Liverpool FC",
     description:
-      "A platform dedicated to everything related to Liverpool Football Club.",
+      "A platform dedicated to everything related to Liverpool FC.",
     imageUrl: liverpool_fc_img,
     demoLink: "https://liverpool-fc-by-houssame.netlify.app/",
     sourceCodeLink: "https://github.com/Errjem/liverpool-fc",

@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaGithubSquare, FaLinkedin, FaFolderOpen } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaFolderOpen} from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TiHome } from "react-icons/ti";
-import { RiCloseCircleFill } from "react-icons/ri";
+import { RiCloseCircleFill ,RiUser3Fill} from "react-icons/ri";
 import { CgMenuRound } from "react-icons/cg";
 import { PiCodeFill, PiPhoneCallFill } from "react-icons/pi";
-import { ImUser } from "react-icons/im";
 import h_logo from "./images/H.png";
 import "./Top.css";
 import { Outlet, Link } from "react-router-dom";
@@ -63,7 +62,7 @@ function Top() {
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <ImUser size={25} /> About
+                <RiUser3Fill size={25} /> About
               </Link>
               <Link
                 to="/skills"
