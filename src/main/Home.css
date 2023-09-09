@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding-bottom: 5rem;
 }
 
 .home-container h1 {
@@ -17,14 +18,13 @@
   text-shadow: 0 0 15px black, 0 0 15px black;
 }
 
-
 .home-container p {
   text-align: center;
   color: white;
   font-family: "Rubik", sans-serif;
   font-size: 3vmax;
   margin-bottom: 4rem;
-  font-weight: 900;
+  font-weight: 100;
   text-shadow: 0 0 15px black, 0 0 15px black;
 }
 
@@ -37,7 +37,7 @@
   background-color: #e5e5e5;
   border-radius: 50px;
   border-style: none;
-  box-shadow: #ADCFFF 0 -15px 6px inset;
+  box-shadow: #adcfff 0 -15px 6px inset;
   box-sizing: border-box;
   color: black;
   cursor: pointer;

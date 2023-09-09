@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaGithub, FaLinkedin, FaTwitter, FaFolderOpen } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaFolderOpen } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { TiHome } from "react-icons/ti";
+import { RiCloseCircleFill } from "react-icons/ri";
+import { CgMenuRound } from "react-icons/cg";
+import { PiCodeFill, PiPhoneCallFill } from "react-icons/pi";
+import { ImUser } from "react-icons/im";
 import h_logo from "./images/H.png";
 import "./Top.css";
 import { Outlet, Link } from "react-router-dom";
-import { TiHome } from "react-icons/ti";
-import { ImUser } from "react-icons/im";
-import { PiCodeFill, PiPhoneCallFill } from "react-icons/pi";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -26,7 +29,7 @@ function Top() {
         expanded={expanded}
       >
         <Container>
-        <Link to="/" onClick={handleNavItemClick}>
+          <Link to="/" onClick={handleNavItemClick}>
             <img src={h_logo} alt="h-logo" id="h-logo" />
           </Link>
           {expanded ? (
@@ -35,7 +38,9 @@ function Top() {
               id="toggler"
               onClick={() => setExpanded(!expanded)}
             >
-             <span>X</span> 
+              <span>
+                <RiCloseCircleFill />
+              </span>
             </Navbar.Toggle>
           ) : (
             <Navbar.Toggle
@@ -43,7 +48,9 @@ function Top() {
               id="toggler"
               onClick={() => setExpanded(!expanded)}
             >
-            <span>☰</span>  
+              <span>
+                <CgMenuRound />
+              </span>
             </Navbar.Toggle>
           )}
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -63,7 +70,7 @@ function Top() {
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                 <PiCodeFill size={25} /> Skills
+                <PiCodeFill size={25} /> Skills
               </Link>
               <Link
                 to="/projects"
@@ -87,7 +94,7 @@ function Top() {
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
               >
-                <FaGithub size={30} className="social-icon" />
+                <FaSquareXTwitter size={30} className="social-icon" />
               </a>
               <a
                 href="http://"
@@ -103,7 +110,7 @@ function Top() {
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
               >
-                <FaTwitter size={30} className="social-icon" />
+                <FaGithubSquare size={30} className="social-icon" />
               </a>
             </div>
           </Navbar.Collapse>
