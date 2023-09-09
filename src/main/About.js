@@ -42,7 +42,7 @@ function About() {
           <h4>Check out my skills :</h4>
           <div className="about-div">
             <Link to="/skills">
-              <Button className="myskills-btn">
+              <Button className="next-btn">
                 My Skills <GrNext />
               </Button>
             </Link>

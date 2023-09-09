@@ -33,7 +33,7 @@ function Skills() {
       </Row>
       <div className="skills-div">
         <Link to="/projects">
-          <Button className="myprojects-btn">
+          <Button className="next-btn">
             My Projects <GrNext />
           </Button>
         </Link>

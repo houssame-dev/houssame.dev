@@ -7,6 +7,7 @@
   align-items: center;
   height: 100vh;
   font-family: "Rubik", sans-serif;
+  padding-bottom: 4rem;
 }
 
 .projects-container2 {
@@ -19,6 +20,7 @@
   margin-inline: 1rem;
   max-width: 400px;
   border-radius: 30px;
+  margin-bottom: 2rem;
 }
 
 .projects-container .cards .card-img {
@@ -49,43 +51,6 @@
 
 .projects-div {
   text-align: center;
-}
-
-.contactme-btn {
-  appearance: none;
-  background-color: #e5e5e5;
-  border-radius: 50px;
-  border-style: none;
-  box-shadow: #adcfff 0 -15px 6px inset;
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: -0.24px;
-  margin-block: 1rem 3rem;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.contactme-btn:hover {
-  color: black;
-  background-color: #e5e5e5;
-  box-shadow: #adcfff 0 -12px 6px inset;
-  transform: scale(1.125);
-}
-
-.contactme-btn:active {
-  transform: scale(1.025);
 }
 
 @media (max-width: 560px) {

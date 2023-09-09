@@ -86,7 +86,7 @@ function Projects() {
       </Container>
       <div className="projects-div">
         <Link to="/contact">
-          <Button className="contactme-btn">
+          <Button className="next-btn">
             Contact Me <GrNext />
           </Button>
         </Link>

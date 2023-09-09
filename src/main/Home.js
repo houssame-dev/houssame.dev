@@ -30,7 +30,7 @@ function Home() {
           <p>FRONT END DEVELOPER, UI/UX DESIGNER</p>
           <div className="home-div">
             <Link to="/about">
-              <Button className="aboutme-btn">
+              <Button className="next-btn">
                 About Me <GrNext />
               </Button>
             </Link>

@@ -32,7 +32,7 @@
   text-align: center;
 }
 
-.aboutme-btn {
+.next-btn {
   appearance: none;
   background-color: #e5e5e5;
   border-radius: 50px;
@@ -58,14 +58,14 @@
   touch-action: manipulation;
 }
 
-.aboutme-btn:hover {
+.next-btn:hover {
   color: black;
   background-color: #e5e5e5;
   box-shadow: #adcfff 0 -12px 6px inset;
   transform: scale(1.125);
 }
 
-.aboutme-btn:active {
+.next-btn:active {
   transform: scale(1.025);
 }
 
