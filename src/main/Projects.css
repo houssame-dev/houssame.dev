@@ -24,7 +24,9 @@
 }
 
 .projects-container .cards .card-img {
-  border-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  
 }
 
 .btn-cards {
