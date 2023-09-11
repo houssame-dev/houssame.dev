@@ -1,31 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+#about {
+  background-color: #e5e5e5;
+}
 
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: "Rubik", sans-serif;
-  padding-bottom: 5rem;
+  padding: 5rem 1rem;
 }
 
-.about-container h4 {
-  text-align: center;
-  color: white;
-  font-size: 2vmax;
-  font-weight: 900;
-  text-shadow: 0 0 15px black, 0 0 15px black;
-  margin-bottom: 1.5rem;
+.about-container h2 {
+  color: black;
+  font-family: "Black Ops One", cursive;
 }
 
-.about-div {
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .myskills-btn {
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
-  }
+.about-container p {
+  color: black;
+  font-family: "Share Tech Mono", monospace;
 }

@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap");
+#home {
+  background-color: black;
+}
 
 .home-container {
   display: flex;
@@ -6,72 +8,50 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-bottom: 5rem;
 }
 
 .home-container h1 {
   text-align: center;
   color: #e5e5e5;
-  font-family: "Rubik Mono One", sans-serif;
+  font-family: "Black Ops One", cursive;
   font-size: 6vmax;
   margin-block: 1rem;
-  text-shadow: 0 0 15px black, 0 0 15px black;
 }
 
 .home-container p {
   text-align: center;
-  color: white;
-  font-family: "Rubik", sans-serif;
+  color: #e5e5e5;
+  font-family: "Share Tech Mono", monospace;
   font-size: 3vmax;
   margin-bottom: 4rem;
   font-weight: 100;
-  text-shadow: 0 0 15px black, 0 0 15px black;
 }
 
-.home-div {
+.home-container .div-buttons {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  font-family: "Share Tech Mono", monospace;
 }
 
-.next-btn {
-  appearance: none;
-  background-color: #e5e5e5;
-  border-radius: 50px;
-  border-style: none;
-  box-shadow: #adcfff 0 -15px 6px inset;
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Rubik", sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-  letter-spacing: -0.24px;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.3rem;
-  quotes: auto;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+.home-container .div-buttons button {
+  color: #e5e5e5;
+  background-color: black;
+  border: 3px solid #e5e5e5;
+  border-radius: 0;
+  margin-inline: 1rem;
+  transition: 0.4s;
 }
 
-.next-btn:hover {
+.home-container .div-buttons button:hover {
   color: black;
   background-color: #e5e5e5;
-  box-shadow: #adcfff 0 -12px 6px inset;
-  transform: scale(1.125);
+  transform: scale(1.3);
 }
 
-.next-btn:active {
-  transform: scale(1.025);
-}
-
-@media (min-width: 768px) {
-  .aboutme-btn {
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
+@media screen and (max-width: 350.5px) {
+  .home-container .div-buttons button {
+    margin-inline: 0.2rem;
   }
 }

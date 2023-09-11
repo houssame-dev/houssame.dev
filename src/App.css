@@ -1,8 +1,1 @@
-body {
-  background-color: black;
-  background-image: url("./main/images/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Share+Tech+Mono&display=swap");

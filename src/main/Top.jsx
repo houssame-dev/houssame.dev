@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaGithubSquare, FaLinkedin, FaFolderOpen} from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { TiHome } from "react-icons/ti";
-import { RiCloseCircleFill ,RiUser3Fill} from "react-icons/ri";
-import { CgMenuRound } from "react-icons/cg";
-import { PiCodeFill, PiPhoneCallFill } from "react-icons/pi";
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
 import h_logo from "./images/H.png";
 import "./Top.css";
-import { Outlet, Link } from "react-router-dom";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -23,14 +20,14 @@ function Top() {
       <Navbar
         collapseOnSelect
         expand="lg"
-        id="navbar"
-        sticky="top"
+        className="navbar"
+        fixed="top"
         expanded={expanded}
       >
         <Container>
-          <Link to="/" onClick={handleNavItemClick}>
+          <Nav.Link href="/" onClick={handleNavItemClick}>
             <img src={h_logo} alt="h-logo" id="h-logo" />
-          </Link>
+          </Nav.Link>
           {expanded ? (
             <Navbar.Toggle
               aria-controls="responsive-navbar-nav"
@@ -38,7 +35,7 @@ function Top() {
               onClick={() => setExpanded(!expanded)}
             >
               <span>
-                <RiCloseCircleFill />
+                <GrClose />
               </span>
             </Navbar.Toggle>
           ) : (
@@ -48,44 +45,53 @@ function Top() {
               onClick={() => setExpanded(!expanded)}
             >
               <span>
-                <CgMenuRound />
+                <GiHamburgerMenu />
               </span>
             </Navbar.Toggle>
           )}
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto" id="nav-items">
-              <Link to="/" className="link-item" onClick={handleNavItemClick}>
-                <TiHome size={25} /> Home
-              </Link>
-              <Link
-                to="/about"
+              <Nav.Link
+                href="#home"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <RiUser3Fill size={25} /> About
-              </Link>
-              <Link
-                to="/skills"
+                Home
+              </Nav.Link>
+              <hr />
+              <Nav.Link
+                href="#about"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <PiCodeFill size={25} /> Skills
-              </Link>
-              <Link
-                to="/projects"
+                About
+              </Nav.Link>
+              <hr />
+              <Nav.Link
+                href="skills"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <FaFolderOpen size={25} /> Projects
-              </Link>
-              <Link
-                to="/contact"
+                Skills
+              </Nav.Link>
+              <hr />
+              <Nav.Link
+                href="projects"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
-                <PiPhoneCallFill size={25} /> Contact
-              </Link>
+                Projects
+              </Nav.Link>
+              <hr />
+              <Nav.Link
+                href="contact"
+                className="link-item"
+                onClick={handleNavItemClick}
+              >
+                Contact
+              </Nav.Link>
             </Nav>
+            <hr />
             <div className="social-icons">
               <a
                 href="http://"
@@ -115,7 +121,6 @@ function Top() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Outlet />
     </>
   );
 }

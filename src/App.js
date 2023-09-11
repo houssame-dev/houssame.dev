@@ -1,25 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Top from "./main/Top";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./main/About";
 import Home from "./main/Home";
-import Skills from "./main/Skills";
-import Projects from "./main/Projects";
-import Contact from "./main/Contact";
+import About from "./main/About";
+// import Skills from "./main/Skills";
+// import Projects from "./main/Projects";
+// import Contact from "./main/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="app">
       <Top />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+      <Home />
+      <About />
+    </div>
   );
 }
 

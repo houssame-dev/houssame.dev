@@ -1,17 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
-#navbar {
+.navbar {
   background-color: #e5e5e5;
-  border-radius: 50px;
-  margin-top: 2rem;
-  margin-inline: 2rem;
-  padding-inline: 2rem;
-  padding-block: 0.5rem 0.7rem;
-  box-shadow: #adcfff 0 -15px 6px inset;
+  padding-inline: 2rem; 
+  font-family: 'Share Tech Mono', monospace;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 #h-logo {
-  max-width: 30px;
+  max-width: 40px;
   transition: all 0.15s;
 }
 
@@ -40,7 +35,6 @@
   max-width: fit-content;
   margin-inline: auto;
   font-size: 1.3rem;
-  font-family: "Rubik", sans-serif;
   padding-block: 5px;
   font-weight: 900;
   transition: all 0.15s;
@@ -51,7 +45,7 @@
 
 .link-item:hover {
   color: gray;
-  transform: scale(1.125);
+  transform: scale(1.2);
 }
 
 .social-icons {
@@ -68,24 +62,24 @@
 
 .social-icon:hover {
   color: gray;
-  transform: scale(1.325);
+  transform: scale(1.3);
 }
 
-@media only screen and (max-width: 991.5px) {
+@media screen and (max-width: 991.5px) {
   .social-icons {
     margin-block: 2rem;
   }
   #nav-items {
     margin-top: 2rem;
   }
-  .link-item {
-    margin-bottom: 1rem;
+  #responsive-navbar-nav{
+    height: 100vh;
+    transition: 0ms;
   }
 }
 
-@media only screen and (max-width: 350.5px) {
-  #navbar {
-    margin-inline: 1rem;
+@media screen and (max-width: 350.5px) {
+  .navbar {
     padding-inline: 1rem;
   }
 }
