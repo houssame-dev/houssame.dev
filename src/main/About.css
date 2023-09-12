@@ -19,3 +19,8 @@
   color: black;
   font-family: "Share Tech Mono", monospace;
 }
+
+
+.about-container Image {
+  width: 20px;
+}
