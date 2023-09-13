@@ -6,7 +6,7 @@
 }
 
 #h-logo {
-  max-width: 40px;
+  max-width: 120px;
   transition: all 0.15s;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .link-item:hover {
-  color: gray;
+  color: #808080;
   transform: scale(1.2);
 }
 
@@ -61,7 +61,7 @@
 }
 
 .social-icon:hover {
-  color: gray;
+  color: #808080;
   transform: scale(1.3);
 }
 

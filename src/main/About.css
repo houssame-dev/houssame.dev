@@ -12,12 +12,15 @@
 
 .about-container h2 {
   color: black;
-  font-family: "Black Ops One", cursive;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  font-weight: bolder;
+  font-size: 4vmax;
 }
 
 .about-container p {
   color: black;
   font-family: "Share Tech Mono", monospace;
+  font-size: 2vmax;
 }
 
 

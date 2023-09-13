@@ -1,20 +1,22 @@
 import React from "react";
 import "./About.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import about1_img from "./images/about4.png";
-import about2_img from "./images/about6.png";
+import about1_img from "./images/about1.png";
+import about2_img from "./images/about2.png";
 import about3_img from "./images/about3.png";
-import about4_img from "./images/about5.png";
+import about4_img from "./images/about4.png";
+import about5_img from "./images/about5.png";
+import about6_img from "./images/about6.png";
 
 function About() {
   return (
     <div id="about">
       <Container className="about-container">
         <Row>
-          <Col md={6} className="mb-4 d-flex align-items-center">
+          <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
             <Image src={about1_img} alt="Image 1" fluid rounded />
           </Col>
-          <Col md={6} className="d-flex align-items-center">
+          <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
               <h2>About Me</h2>
               <p>
@@ -47,10 +49,10 @@ function About() {
         </Row>
 
         <Row className="mt-5">
-          <Col md={6} className="mb-4 d-flex align-items-center">
+          <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
             <Image src={about3_img} alt="Image 3" fluid rounded />
           </Col>
-          <Col md={6} className="d-flex align-items-center">
+          <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
               <h2>What Sets Me Apart ?</h2>
               <p>
@@ -71,21 +73,43 @@ function About() {
           </Col>
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
-              <h2>Collaboration and Learning</h2>
+              <h2>Collaboration</h2>
               <p>
                 🌟 Collaboration is at the heart of my development philosophy. I
                 enjoy working closely with designers, backend developers, and
                 stakeholders to bring ideas to life. Communication and teamwork
                 are key to delivering outstanding results.
-                <br />
-                <br />
+              </p>
+            </span>
+          </Col>
+        </Row>
+
+        <Row className="mt-5">
+          <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
+            <Image src={about5_img} alt="Image 5" fluid rounded />
+          </Col>
+          <Col md={6} className="order-md-2 d-flex align-items-center">
+            <span>
+              <h2>Learning</h2>
+              <p>
                 💼 When I'm not coding, you can often find me exploring the
                 latest tech blogs, contributing to open-source projects, or
                 experimenting with new coding techniques. I'm also a firm
                 believer in the power of continuous learning, and I'm constantly
                 expanding my skill set.
-                <br />
-                <br />
+              </p>
+            </span>
+          </Col>
+        </Row>
+
+        <Row className="mt-5">
+          <Col md={6} className="order-md-2 mb-4 d-flex align-items-center">
+            <Image src={about6_img} alt="Image 6" fluid rounded />
+          </Col>
+          <Col md={6} className="order-md-1 d-flex align-items-center">
+            <span>
+              <h2>Connect</h2>
+              <p>
                 🌎 Let's connect and create something amazing together! Whether
                 you have a project in mind or just want to chat about the latest
                 in React, I'm always excited to meet fellow developers and

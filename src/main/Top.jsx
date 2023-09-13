@@ -6,7 +6,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
-import h_logo from "./images/H.png";
+import my_logo from "./images/my-logo.png";
 import "./Top.css";
 
 function Top() {
@@ -26,7 +26,7 @@ function Top() {
       >
         <Container>
           <Nav.Link href="/" onClick={handleNavItemClick}>
-            <img src={h_logo} alt="h-logo" id="h-logo" />
+            <img src={my_logo} alt="h-logo" id="h-logo" />
           </Nav.Link>
           {expanded ? (
             <Navbar.Toggle

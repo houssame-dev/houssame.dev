@@ -1,5 +1,5 @@
 #home {
-  background-image: url("./images/back3.jpg");
+  background-image: url("./images/home-background.jpg");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -18,7 +18,9 @@
 .home-container h1 {
   text-align: center;
   color: #e5e5e5;
-  font-family: "Black Ops One", cursive;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+  letter-spacing: 10px;
+  font-weight: bolder;
   font-size: 6vmax;
   margin-block: 1rem;
 }
