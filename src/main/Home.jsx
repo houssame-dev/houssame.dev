@@ -6,9 +6,7 @@ import "aos/dist/aos.css";
 
 function Home() {
   useEffect(() => {
-    AOS.init({
-      once: true,
-    });
+    AOS.init();
   }, []);
 
   return (

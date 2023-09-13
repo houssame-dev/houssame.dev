@@ -12,9 +12,7 @@ import "aos/dist/aos.css";
 
 function About() {
   useEffect(() => {
-    AOS.init({
-      once: true,
-    });
+    AOS.init();
   }, []);
   return (
     <div id="about">
@@ -129,11 +127,20 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
-            <Image src={about5_img} alt="Image 5" fluid rounded data-aos="fade-right" data-aos-duration="2000"/>
+            <Image
+              src={about5_img}
+              alt="Image 5"
+              fluid
+              rounded
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            />
           </Col>
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-left" data-aos-duration="2000">Learning</h2>
+              <h2 data-aos="fade-left" data-aos-duration="2000">
+                Learning
+              </h2>
               <p data-aos="fade-left" data-aos-duration="3000">
                 💼 When I'm not coding, you can often find me exploring the
                 latest tech blogs, contributing to open-source projects, or
@@ -147,11 +154,20 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-2 mb-4 d-flex align-items-center">
-            <Image src={about6_img} alt="Image 6" fluid rounded data-aos="fade-left" data-aos-duration="2000"/>
+            <Image
+              src={about6_img}
+              alt="Image 6"
+              fluid
+              rounded
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            />
           </Col>
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-right" data-aos-duration="2000">Connect</h2>
+              <h2 data-aos="fade-right" data-aos-duration="2000">
+                Connect
+              </h2>
               <p data-aos="fade-right" data-aos-duration="3000">
                 🌎 Let's connect and create something amazing together! Whether
                 you have a project in mind or just want to chat about the latest
