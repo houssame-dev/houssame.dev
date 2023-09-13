@@ -54,7 +54,7 @@ function About() {
           </Col>
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
-              <h2>What Sets Me Apart ?</h2>
+              <h2>What Sets Me Apart</h2>
               <p>
                 💡 What sets me apart is my attention to detail and commitment
                 to writing clean, maintainable code. I believe that a
