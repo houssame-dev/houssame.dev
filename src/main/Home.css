@@ -1,10 +1,5 @@
 #home {
-  background-image: url("./images/home-background.jpg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  background-color: gray;
-  background-blend-mode: multiply;
+  background-color: black;
 }
 
 .home-container {
