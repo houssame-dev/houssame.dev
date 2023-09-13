@@ -6,7 +6,7 @@ import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
-import my_logo from "./images/my-logo.png";
+import my_logo from "./images/my-logo-black.png";
 import "./Top.css";
 
 function Top() {
