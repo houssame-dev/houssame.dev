@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,6 +8,8 @@ import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import my_logo from "./images/my-logo-black.png";
 import "./Top.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -15,6 +17,10 @@ function Top() {
   const handleNavItemClick = () => {
     setExpanded(false);
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Navbar
@@ -23,8 +29,9 @@ function Top() {
         className="navbar"
         fixed="top"
         expanded={expanded}
+        data-aos="fade-down" data-aos-duration="1000"
       >
-        <Container>
+        <Container data-aos="fade-down" data-aos-duration="3000">
           <Nav.Link href="/" onClick={handleNavItemClick}>
             <img src={my_logo} alt="h-logo" id="h-logo" />
           </Nav.Link>
