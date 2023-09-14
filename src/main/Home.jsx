@@ -26,8 +26,8 @@ function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <Button variant="light">Download Cv</Button>
-              <Button variant="light">Contact Me</Button>
+              <Button variant="light" id="btn1">Download Cv</Button>
+              <Button variant="light" id="btn2">Contact Me</Button>
             </div>
           </Col>
         </Row>

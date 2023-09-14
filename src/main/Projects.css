@@ -1,0 +1,56 @@
+#projects {
+  padding-block: 5rem;
+  background-color: #e5e5e5;
+}
+
+.projects-container h2 {
+  text-align: center;
+  color: black;
+  letter-spacing: 10px;
+  padding-block: 2rem;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+  font-weight: bolder;
+  font-size: 4vmax;
+}
+
+.projects-container .card {
+  border-radius: 20px;
+  font-family: "Share Tech Mono", monospace;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.projects-container .card-img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.projects-container .btn1 {
+  background-color: #e5e5e5;
+  color: black;
+  border-radius: 20px;
+  border: 3px solid #e5e5e5;
+  transition: 0.4s;
+  margin-right: 1rem;
+}
+
+.projects-container .btn2 {
+  background-color: black;
+  color: #e5e5e5;
+  border-radius: 20px;
+  border: 3px solid black;
+  transition: 0.4s;
+}
+
+.projects-container .btn1:hover,
+.btn2:hover {
+  color: #e5e5e5;
+  background-color: #808080;
+  border: 3px solid #808080;
+  transform: scale(1.1);
+}

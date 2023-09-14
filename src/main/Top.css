@@ -15,7 +15,7 @@
 
 #h-logo {
   max-width: 60px;
-  transition: all 0.15s;
+  transition: 0.4s;
 }
 
 #h-logo:hover {
@@ -45,7 +45,7 @@
   font-size: 1.3rem;
   padding-block: 5px;
   font-weight: 900;
-  transition: all 0.15s;
+  transition: 0.4s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@
 .social-icon {
   color: black;
   margin-inline: 0.5rem;
-  transition: all 0.15s;
+  transition: 0.4s;
 }
 
 .social-icon:hover {

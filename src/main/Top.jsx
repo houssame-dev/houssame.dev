@@ -83,7 +83,7 @@ function Top() {
               </Nav.Link>
               <hr />
               <Nav.Link
-                href="projects"
+                href="#projects"
                 className="link-item"
                 onClick={handleNavItemClick}
               >
@@ -91,7 +91,7 @@ function Top() {
               </Nav.Link>
               <hr />
               <Nav.Link
-                href="contact"
+                href="#contact"
                 className="link-item"
                 onClick={handleNavItemClick}
               >

@@ -10,11 +10,10 @@
   text-align: center;
   color: #e5e5e5;
   letter-spacing: 10px;
-  margin-block: 1rem;
+  padding-block:  2rem;
   font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-weight: bolder;
   font-size: 4vmax;
-  margin-bottom: 5rem;
 }
 
 .skills-container .icon {
