@@ -19,7 +19,7 @@ function Home() {
               <div>ERRJEM</div>
             </h1>
             <p data-aos="fade-up" data-aos-duration="2000">
-              FRONT END DEVELOPER, UI/UX DESIGNER
+              FRONT-END DEVELOPER
             </p>
             <div
               className="div-buttons"

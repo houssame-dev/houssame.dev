@@ -4,7 +4,7 @@ import "./App.css";
 import Top from "./main/Top";
 import Home from "./main/Home";
 import About from "./main/About";
-// import Skills from "./main/Skills";
+import Skills from "./main/Skills";
 // import Projects from "./main/Projects";
 // import Contact from "./main/Contact";
 
@@ -14,6 +14,7 @@ function App() {
       <Top />
       <Home />
       <About />
+      <Skills />
     </div>
   );
 }

@@ -75,7 +75,7 @@ function Top() {
               </Nav.Link>
               <hr />
               <Nav.Link
-                href="skills"
+                href="#skills"
                 className="link-item"
                 onClick={handleNavItemClick}
               >

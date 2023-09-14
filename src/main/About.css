@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding-block: 5rem;
 }
 
 .about-container h2 {
