@@ -101,7 +101,7 @@ function Top() {
             <hr />
             <div className="social-icons">
               <a
-                href="http://"
+                href="https://twitter.com/errjem2"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
@@ -109,7 +109,7 @@ function Top() {
                 <FaSquareXTwitter size={30} className="social-icon" />
               </a>
               <a
-                href="http://"
+                href="https://www.linkedin.com/in/houssameerrjem/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
@@ -117,7 +117,7 @@ function Top() {
                 <FaLinkedin size={30} className="social-icon" />
               </a>
               <a
-                href="http://"
+                href="https://github.com/Errjem"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
