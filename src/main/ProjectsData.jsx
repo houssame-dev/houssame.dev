@@ -1,6 +1,6 @@
-import story_corner_img from "./images/about1.png";
-import solar_system_img from "./images/about1.png";
-import liverpool_fc_img from "./images/about1.png";
+import story_corner_img from "./images/storycorner.jpg";
+import solar_system_img from "./images/solarsystem.jpg";
+import liverpool_fc_img from "./images/liverpool.jpg";
 
 const ProjectsData = [
   {
