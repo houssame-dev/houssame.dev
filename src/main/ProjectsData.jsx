@@ -1,6 +1,6 @@
-import story_corner_img from "./images/story-corner.png";
-// import solar_system_img from "./images/solar-system.png";
-import liverpool_fc_img from "./images/liverpool.png";
+import story_corner_img from "./images/about1.png";
+import solar_system_img from "./images/about1.png";
+import liverpool_fc_img from "./images/about1.png";
 
 const ProjectsData = [
   {
@@ -10,13 +10,13 @@ const ProjectsData = [
     url: "https://story-corner.netlify.app/",
     code: "https://github.com/Errjem/story-corner",
   },
-  // {
-  //   title: "Solar System",
-  //   description: "Explore interactive Solar System planets knowledge.",
-  //   image: solar_system_img,
-  //   url: "https://solar-system-dm.netlify.app/",
-  //   code: "https://github.com/Errjem/solar-system",
-  // },
+  {
+    title: "Solar System",
+    description: "Explore interactive Solar System planets knowledge.",
+    image: solar_system_img,
+    url: "https://solar-system-dm.netlify.app/",
+    code: "https://github.com/Errjem/solar-system",
+  },
   {
     title: "Liverpool FC",
     description: "Discover history, squad, titles and facts of liverpool.",
