@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { RiDownloadCloudFill, RiWhatsappFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -26,8 +27,12 @@ function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <Button variant="light" id="btn1">Download Cv</Button>
-              <Button variant="light" id="btn2">Contact Me</Button>
+              <Button variant="light" id="btn1">
+                <RiDownloadCloudFill /> Download Cv
+              </Button>
+              <Button variant="light" id="btn2">
+                <RiWhatsappFill /> Contact Me
+              </Button>
             </div>
           </Col>
         </Row>

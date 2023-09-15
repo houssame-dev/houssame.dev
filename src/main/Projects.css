@@ -7,7 +7,7 @@
   text-align: center;
   color: black;
   letter-spacing: 10px;
-  padding-block: 2rem;
+  padding-block: 2rem 0;
   font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-weight: bolder;
   font-size: 4vmax;
@@ -20,8 +20,8 @@
 }
 
 .projects-container .card-img {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -29,8 +29,7 @@
 .projects-container .btn1 {
   background-color: #e5e5e5;
   color: black;
-  border-radius: 20px;
-  border: 3px solid #e5e5e5;
+  border-radius: 10px;
   transition: 0.4s;
   margin-right: 1rem;
 }
@@ -38,8 +37,7 @@
 .projects-container .btn2 {
   background-color: black;
   color: #e5e5e5;
-  border-radius: 20px;
-  border: 3px solid black;
+  border-radius: 10px;
   transition: 0.4s;
 }
 
@@ -47,6 +45,5 @@
 .btn2:hover {
   color: #e5e5e5;
   background-color: #808080;
-  border: 3px solid #808080;
   transform: scale(1.1);
 }

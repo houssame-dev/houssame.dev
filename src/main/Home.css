@@ -54,7 +54,7 @@
   color: #e5e5e5;
   background-color: #808080;
   border: 3px solid #808080;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .home-container #btn2 {
@@ -69,7 +69,7 @@
   color: #e5e5e5;
   background-color: #808080;
   border: 3px solid #808080;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 350.5px) {

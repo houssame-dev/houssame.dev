@@ -1,0 +1,62 @@
+#contact {
+  background-color: black;
+}
+
+.contact-container {
+  padding-block: 5rem;
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #e5e5e5;
+  letter-spacing: 10px;
+  padding-block: 2rem 4rem;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
+  font-weight: bolder;
+  font-size: 4vmax;
+}
+
+.contact-container .form-label,
+.form-control {
+  color: #e5e5e5;
+  font-family: "Share Tech Mono", monospace;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contact-container .send-btn {
+  color: black;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: none;
+  font-family: "Share Tech Mono", monospace;
+  transition: 0.4s;
+}
+
+.contact-container .send-btn:hover {
+  color: #e5e5e5;
+  background-color: #808080;
+  transform: scale(1.1);
+}
+
+.contact-container .contact-information {
+  color: #e5e5e5;
+  font-family: "Share Tech Mono", monospace;
+  margin-bottom: 5rem;
+}
+
+.contact-container .social-icons {
+  margin-top: 20px;
+  justify-content: start;
+}
+
+.contact-container .social-icons a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #e5e5e5;
+  transition: 0.4s;
+}
+
+.contact-container .social-icons a:hover {
+  color: #808080;
+  transform: scale(1.2);
+}
