@@ -16,7 +16,7 @@
 .projects-container .card {
   border-radius: 20px;
   font-family: "Share Tech Mono", monospace;
-  border: 2px solid black;
+  border: none;
 }
 
 .projects-container .card-img {
