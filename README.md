@@ -20,7 +20,7 @@ I am a passionate frontend developer with a strong foundation in web development
 - **Location:** Morocco
 - **Email:** errjem2@gmail.com
 - **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssameerrjem/)
-- **Portfolio Website:** [My Website](https://houssame-errjem.netlify.app/)
+- **Portfolio Website:** [My Website](https://houssame.netlify.app/)
 
 ## Projects
 
@@ -29,12 +29,12 @@ Here are some of the projects I've worked on using React. You can find more deta
 1. [solar-system](https://github.com/Errjem/solar-system)
    - Description: A web application that allows users to explore and learn about the different planets in our solar system. The application provides an interactive and visually appealing experience to enhance your knowledge about the planets.
    - Technologies Used: React, HTML, CSS, etc.
-   - Demo: [Link to Live Demo](https://solar-system-by-houssame.netlify.app/)
+   - Demo: [Link to Live Demo](https://solar-system-dm.netlify.app/)
 
 2. [liverpool-fc](https://github.com/Errjem/liverpool-fc)
    - Description: A web application built to provide fans and enthusiasts with comprehensive information about Liverpool Football Club..
    - Technologies Used: React, HTML, CSS, etc.
-   - Demo: [Link to Live Demo](https://liverpool-fc-by-houssame.netlify.app/)
+   - Demo: [Link to Live Demo](https://lfc-demo.netlify.app/)
 
 3. [story-corner](https://github.com/Errjem/Story-Corner)
    - Description: A modern blog application where users can create their own accounts, post their stories, like other users' stories, and modify or delete their own stories.
