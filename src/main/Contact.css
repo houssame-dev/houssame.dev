@@ -4,6 +4,7 @@
 
 .contact-container {
   padding-block: 5rem;
+  padding-inline: 2rem;
 }
 
 .contact-container h2 {
@@ -16,9 +17,13 @@
   font-size: 4vmax;
 }
 
-.contact-container .form-label,
-.form-control {
+.contact-container .contact-form{
   color: #e5e5e5;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.contact-container .form-control {
+  color: black;
   font-family: "Share Tech Mono", monospace;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -60,3 +65,4 @@
   color: #808080;
   transform: scale(1.2);
 }
+

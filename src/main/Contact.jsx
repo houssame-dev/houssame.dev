@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Form, Button, InputGroup, Row, Col } from "react-bootstrap";
 import { FaUser, FaXTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa6";
 import { IoMail, IoLocationSharp, IoCall } from "react-icons/io5";
 import { BiSolidMessage } from "react-icons/bi";
 import { BsSendFill } from "react-icons/bs";
 import "./Contact.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -27,17 +29,27 @@ function Contact() {
     e.preventDefault();
     console.log(formData);
   };
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <div id="contact">
       <Container className="contact-container">
-        <h2>Contact Me</h2>
+        <h2 data-aos="fade-up" data-aos-duration="2000">
+          Contact Me
+        </h2>
         <Row>
           <Col md={6}>
-            <div className="contact-information">
+            <div
+              className="contact-information"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <h3>
                 <strong>Contact Information</strong>
               </h3>
+              <hr />
               <p>
                 <IoLocationSharp /> <strong>Location:</strong> Mohammedia,
                 Morocco
@@ -48,6 +60,7 @@ function Contact() {
               <p>
                 <IoMail /> <strong>Email:</strong> errjem2@gmail.com
               </p>
+              <br />
               <div className="social-icons">
                 <a
                   href="https://twitter.com/errjem2"
@@ -74,56 +87,63 @@ function Contact() {
             </div>
           </Col>
           <Col md={6}>
-            <Form onSubmit={handleSubmit}>
-              <Form.Label>Name:</Form.Label>
-              <InputGroup>
-                <InputGroup.Text>
-                  <FaUser />
-                </InputGroup.Text>
-                <Form.Control
-                  type="text"
-                  name="name"
-                  placeholder="Type Your Name"
-                  value={name}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <br />
-              <Form.Label>Email:</Form.Label>
-              <InputGroup>
-                <InputGroup.Text>
-                  <IoMail />
-                </InputGroup.Text>
-                <Form.Control
-                  type="email"
-                  name="email"
-                  placeholder="Type Your Email"
-                  value={email}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <br />
-              <Form.Label>Message:</Form.Label>
-              <InputGroup>
-                <InputGroup.Text>
-                  <BiSolidMessage />
-                </InputGroup.Text>
-                <Form.Control
-                  as="textarea"
-                  name="message"
-                  placeholder="Type Your Message"
-                  value={message}
-                  onChange={handleInputChange}
-                  required
-                />
-              </InputGroup>
-              <br />
-              <Button variant="light" type="submit" className="send-btn">
-                <BsSendFill /> Send Message
-              </Button>
-            </Form>
+            <div
+              className="contact-form"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <h3>
+                <strong>Contact Form</strong>
+              </h3>
+              <hr />
+              <Form onSubmit={handleSubmit}>
+                <InputGroup>
+                  <InputGroup.Text>
+                    <FaUser />
+                  </InputGroup.Text>
+                  <Form.Control
+                    type="text"
+                    name="name"
+                    placeholder="Type Your Name"
+                    value={name}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </InputGroup>
+                <br />
+                <InputGroup>
+                  <InputGroup.Text>
+                    <IoMail />
+                  </InputGroup.Text>
+                  <Form.Control
+                    type="email"
+                    name="email"
+                    placeholder="Type Your Email"
+                    value={email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </InputGroup>
+                <br />
+                <InputGroup>
+                  <InputGroup.Text>
+                    <BiSolidMessage />
+                  </InputGroup.Text>
+                  <Form.Control
+                    as="textarea"
+                    name="message"
+                    placeholder="Type Your Message"
+                    value={message}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </InputGroup>
+                <br />
+                <Button variant="light" type="submit" className="send-btn">
+                  <BsSendFill /> Send Message
+                </Button>
+              </Form>
+            </div>
           </Col>
         </Row>
       </Container>
