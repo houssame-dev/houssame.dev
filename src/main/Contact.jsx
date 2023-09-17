@@ -7,6 +7,10 @@ import { BsSendFill } from "react-icons/bs";
 import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -27,8 +31,36 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    emailjs
+      .send(
+        "service_yk8g4sq",
+        "template_ukdosqa",
+        formData,
+        "vYsUdrWvFVz2rdXXc"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          toast.success("Email sent successfully !", {
+            position: toast.POSITION.TOP_RIGHT
+          });
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+          toast.error("Email sending failed !", {
+            position: toast.POSITION.TOP_RIGHT
+          });
+        }
+      );
   };
+
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -36,6 +68,7 @@ function Contact() {
   return (
     <div id="contact">
       <Container className="contact-container">
+      <ToastContainer />
         <h2 data-aos="fade-up" data-aos-duration="2000">
           Contact Me
         </h2>

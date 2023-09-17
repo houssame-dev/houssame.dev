@@ -5,11 +5,19 @@ import { RiDownloadCloudFill, RiWhatsappFill } from "react-icons/ri";
 import cv from "./images/cv-front-end.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Home() {
   const showNumber = () => {
     window.open("tel:+212623659049");
   };
+  const handleDownloadClick = () => {
+    toast.success("CV downloaded successfully!", {
+      position: toast.POSITION.TOP_RIGHT
+    });
+  };
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -17,6 +25,7 @@ function Home() {
   return (
     <div id="home">
       <Container className="home-container">
+        <ToastContainer />
         <Row>
           <Col>
             <h1 data-aos="fade-up" data-aos-duration="1000">
@@ -31,7 +40,13 @@ function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <Button variant="light" id="btn1" href={cv} download>
+              <Button
+                variant="light"
+                id="btn1"
+                href={cv}
+                download
+                onClick={handleDownloadClick}
+              >
                 <RiDownloadCloudFill /> Download Cv
               </Button>
               <Button variant="light" id="btn2" onClick={showNumber}>
