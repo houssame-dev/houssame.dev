@@ -84,14 +84,13 @@ function Contact() {
               </h3>
               <hr />
               <p>
-                <IoLocationSharp /> <strong>Location:</strong> Mohammedia,
-                Morocco
+                <IoLocationSharp /> Mohammedia, Morocco
               </p>
               <p>
-                <IoCall /> <strong>Phone:</strong> (+212) 623-659049
+                <IoCall /> (+212) 623-659049
               </p>
               <p>
-                <IoMail /> <strong>Email:</strong> errjem2@gmail.com
+                <IoMail /> errjem2@gmail.com
               </p>
               <br />
               <div className="social-icons">
