@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { RiDownloadCloudFill, RiWhatsappFill } from "react-icons/ri";
-import cv from "./images/Resume.pdf";
+import cv from "./images/cv.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -14,7 +14,7 @@ function Home() {
   };
   const handleDownloadClick = () => {
     toast.success("CV downloaded successfully!", {
-      position: toast.POSITION.TOP_RIGHT
+      position: toast.POSITION.TOP_RIGHT,
     });
   };
 
