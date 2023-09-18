@@ -102,7 +102,7 @@ function Contact() {
                   <FaXTwitter className="twitter-icon" size={25} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/houssameerrjem/"
+                  href="https://www.linkedin.com/in/errjem/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

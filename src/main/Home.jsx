@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { RiDownloadCloudFill, RiWhatsappFill } from "react-icons/ri";
-import cv from "./images/cv-front-end.pdf";
+import cv from "./images/Resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ToastContainer, toast } from "react-toastify";

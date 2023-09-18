@@ -109,7 +109,7 @@ function Top() {
                 <FaSquareXTwitter size={30} className="social-icon" />
               </a>
               <a
-                href="https://www.linkedin.com/in/houssameerrjem/"
+                href="https://www.linkedin.com/in/errjem/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleNavItemClick}
