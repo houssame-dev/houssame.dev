@@ -29,7 +29,7 @@ function Home() {
         <Row>
           <Col>
             <h1 data-aos="fade-up" data-aos-duration="1000">
-              <div>HOUSSAME</div>
+             <div>HOUSSAME</div>
               <div>ERRJEM</div>
             </h1>
             <p data-aos="fade-up" data-aos-duration="2000">
