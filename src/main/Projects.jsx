@@ -40,7 +40,7 @@ function Projects() {
                   </Button>
                   <Button
                     variant="light"
-                    href={project.url}
+                    href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn2"
