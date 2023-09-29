@@ -18,9 +18,9 @@ I am a passionate frontend developer with a strong foundation in web development
 
 - **Name:** Houssame Errjem
 - **Location:** Morocco
-- **Email:** errjem2@gmail.com
-- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/errjem/)
-- **Portfolio Website:** [My Website](https://houssame.netlify.app/)
+- **Email:** houssame.dev@gmail.com
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-dev/)
+- **Portfolio Website:** [My Website](https://houssamedev.netlify.app/)
 
 ## Projects
 
@@ -93,8 +93,8 @@ This command will start the development server, and you can access the portfolio
 
 I'm always open to collaboration and new opportunities. Feel free to reach out to me via email or connect with me on LinkedIn:
 
-- **Email:** errjem2@gmail.com
-- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/errjem/) <br/>
+- **Email:** houssame.dev@gmail.com
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-dev/) <br/>
 Let's create something amazing together!
 
 ## License
