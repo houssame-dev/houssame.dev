@@ -95,21 +95,21 @@ function Contact() {
               <br />
               <div className="social-icons">
                 <a
-                  href="https://twitter.com/errjem2"
+                  href="https://twitter.com/houssamedev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaXTwitter className="twitter-icon" size={25} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/errjem/"
+                  href="https://www.linkedin.com/in/houssame-dev/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaLinkedinIn className="linkedin-icon" size={25} />
                 </a>
                 <a
-                  href="https://github.com/Errjem"
+                  href="https://github.com/houssame-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
