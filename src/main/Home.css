@@ -1,6 +1,12 @@
 #home {
-  background-color: black;
   padding-top: 2rem;
+  background-color: #000000;
+  background-image: linear-gradient(
+    45deg,
+    #000000 0%,
+    #000000 46%,
+    #808080 100%
+  );
 }
 
 .home-container {
