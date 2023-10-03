@@ -90,7 +90,7 @@ function Contact() {
                 <IoCall /> (+212) 623-659049
               </p>
               <p>
-                <IoMail /> errjem2@gmail.com
+                <IoMail /> houssame.dev@gmail.com
               </p>
               <br />
               <div className="social-icons">

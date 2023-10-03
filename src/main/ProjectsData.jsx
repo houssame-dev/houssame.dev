@@ -1,3 +1,4 @@
+import weather_twoday_img from "./images/weatherapp.jpg";
 import story_corner_img from "./images/storycorner.jpg";
 import color_code_img from "./images/colorcd.jpg";
 import solar_system_img from "./images/solarsystem.jpg";
@@ -5,15 +6,22 @@ import liverpool_fc_img from "./images/liverpool.jpg";
 
 const ProjectsData = [
   {
+    title: "Weather TwoDay",
+    description: "Explore Real-time weather updates, forecasts.",
+    image: weather_twoday_img,
+    url: "https://weathertwoday.netlify.app/",
+    code: "https://github.com/houssame-dev/weather-app",
+  },
+  {
     title: "Story Corner",
-    description: "Modern blogging, share, like, manage stories.",
+    description: "Modern blogging, share, like and manage stories.",
     image: story_corner_img,
     url: "https://story-corner.netlify.app/",
     code: "https://github.com/Errjem/story-corner",
   },
   {
     title: "Color Code",
-    description: "Discover color's hexadecimal code instantly.",
+    description: "Discover and copy color's hexadecimal code instantly.",
     image: color_code_img,
     url: "https://colorcd.netlify.app/",
     code: "https://github.com/Errjem/color-code",
