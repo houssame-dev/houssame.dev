@@ -4,7 +4,7 @@
 }
 
 .contact-container {
-  padding-block: 5rem;
+  padding-block: 5rem 3rem;
   padding-inline: 2rem;
 }
 
@@ -47,7 +47,6 @@
 .contact-container .contact-information {
   color: #e5e5e5;
   font-family: "Share Tech Mono", monospace;
-  margin-bottom: 5rem;
   text-align: end;
 }
 
@@ -66,4 +65,16 @@
 .contact-container .social-icons a:hover {
   color: #808080;
   transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 767.5px){
+  .contact-container .contact-information {
+    margin-top: 3rem;
+    text-align: start;
+  }
+  .contact-container .social-icons {
+    margin-top: 20px;
+    justify-content: start;
+  }
 }

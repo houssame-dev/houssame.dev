@@ -8,9 +8,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <p className="copyright">
-          &copy;
           <span>
-            {currentYear} {authorName}
+            &copy; {currentYear} {authorName}
           </span>
         </p>
       </div>
