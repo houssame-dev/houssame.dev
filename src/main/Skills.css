@@ -1,5 +1,6 @@
 #skills {
   background-color: black;
+  min-height: 100vh;
 }
 
 .skills-container {
@@ -20,6 +21,7 @@
   color: #e5e5e5;
   text-align: center;
   font-size: 80px;
+  transition: 0.4s;
 }
 
 .skills-container .icon:hover {

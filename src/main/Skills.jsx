@@ -13,15 +13,13 @@ function Skills() {
   return (
     <div id="skills">
       <Container className="skills-container">
-        <h2 data-aos="fade-up" data-aos-duration="2000">
-          My Technical Skills
-        </h2>
+        <h2>My Technical Skills</h2>
         <Row className="my-5">
           {SkillsData.map((skill, index) => (
             <Col key={index} md={4} xs={6} className="text-center">
-              <div data-aos="fade-up" data-aos-duration="3000">
-                  <span className="icon">{skill.icon}</span> <br />
-                  <span className="text">{skill.name}</span>
+              <div>
+                <span className="icon">{skill.icon}</span> <br />
+                <span className="text">{skill.name}</span>
               </div>
             </Col>
           ))}

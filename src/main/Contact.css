@@ -1,5 +1,6 @@
 #contact {
   background-color: black;
+  min-height: 100vh;
 }
 
 .contact-container {
@@ -17,7 +18,7 @@
   font-size: 4vmax;
 }
 
-.contact-container .contact-form{
+.contact-container .contact-form {
   color: #e5e5e5;
   font-family: "Share Tech Mono", monospace;
 }
@@ -40,18 +41,19 @@
 .contact-container .send-btn:hover {
   color: #e5e5e5;
   background-color: #808080;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .contact-container .contact-information {
   color: #e5e5e5;
   font-family: "Share Tech Mono", monospace;
   margin-bottom: 5rem;
+  text-align: end;
 }
 
 .contact-container .social-icons {
   margin-top: 20px;
-  justify-content: start;
+  justify-content: end;
 }
 
 .contact-container .social-icons a {
@@ -63,6 +65,5 @@
 
 .contact-container .social-icons a:hover {
   color: #808080;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-

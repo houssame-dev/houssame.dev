@@ -1,6 +1,7 @@
 #projects {
   padding-block: 5rem;
   background-color: #e5e5e5;
+  min-height: 100vh;
 }
 
 .projects-container h2 {
@@ -45,5 +46,5 @@
 .btn2:hover {
   color: #e5e5e5;
   background-color: #808080;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

@@ -28,18 +28,12 @@ function Home() {
         <ToastContainer />
         <Row>
           <Col>
-            <h1 data-aos="fade-up" data-aos-duration="1000">
-             <div>HOUSSAME</div>
-              <div>ERRJEM</div>
+            <h1>
+              <div>hi, it's</div>
+              <div>HOUSSAME</div>
             </h1>
-            <p data-aos="fade-up" data-aos-duration="2000">
-              FRONT-END DEVELOPER
-            </p>
-            <div
-              className="div-buttons"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
+            <p>a WEB DEVELOPER</p>
+            <div className="div-buttons">
               <Button
                 variant="light"
                 id="btn1"

@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import my_logo from "./images/my-logo-black.png";
 import "./Top.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -18,9 +16,6 @@ function Top() {
     setExpanded(false);
   };
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <>
       <Navbar
@@ -29,9 +24,8 @@ function Top() {
         className="navbar"
         fixed="top"
         expanded={expanded}
-        data-aos="fade-down" data-aos-duration="1000"
       >
-        <Container data-aos="fade-down" data-aos-duration="3000">
+        <Container>
           <Nav.Link href="/" onClick={handleNavItemClick}>
             <img src={my_logo} alt="h-logo" id="h-logo" />
           </Nav.Link>
@@ -107,14 +101,6 @@ function Top() {
                 onClick={handleNavItemClick}
               >
                 <FaSquareXTwitter size={30} className="social-icon" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/houssame-dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleNavItemClick}
-              >
-                <FaLinkedin size={30} className="social-icon" />
               </a>
               <a
                 href="https://github.com/houssame-dev"

@@ -7,6 +7,7 @@
     #000000 46%,
     #808080 100%
   );
+  min-height: 100vh;
 }
 
 .home-container {
@@ -60,7 +61,7 @@
   color: #e5e5e5;
   background-color: #808080;
   border: 3px solid #808080;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .home-container #btn2 {
@@ -75,7 +76,7 @@
   color: #e5e5e5;
   background-color: #808080;
   border: 3px solid #808080;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 350.5px) {

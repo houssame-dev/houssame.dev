@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Form, Button, InputGroup, Row, Col } from "react-bootstrap";
-import { FaUser, FaXTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa6";
+import { FaUser, FaXTwitter, FaGithub } from "react-icons/fa6";
 import { IoMail, IoLocationSharp, IoCall } from "react-icons/io5";
 import { BiSolidMessage } from "react-icons/bi";
 import { BsSendFill } from "react-icons/bs";
 import "./Contact.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; 
-
+import "react-toastify/dist/ReactToastify.css";
+import Footer from "./Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -43,7 +41,7 @@ function Contact() {
         (response) => {
           console.log("Email sent successfully:", response);
           toast.success("Email sent successfully !", {
-            position: toast.POSITION.TOP_RIGHT
+            position: toast.POSITION.TOP_RIGHT,
           });
           setFormData({
             name: "",
@@ -54,31 +52,20 @@ function Contact() {
         (error) => {
           console.error("Email sending failed:", error);
           toast.error("Email sending failed !", {
-            position: toast.POSITION.TOP_RIGHT
+            position: toast.POSITION.TOP_RIGHT,
           });
         }
       );
   };
 
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div id="contact">
       <Container className="contact-container">
-      <ToastContainer />
-        <h2 data-aos="fade-up" data-aos-duration="2000">
-          Contact Me
-        </h2>
+        <ToastContainer />
+        <h2>Contact Me</h2>
         <Row>
-          <Col md={6}>
-            <div
-              className="contact-information"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
+          <Col md={6} className="order-2">
+            <div className="contact-information">
               <h3>
                 <strong>Contact Information</strong>
               </h3>
@@ -102,13 +89,6 @@ function Contact() {
                   <FaXTwitter className="twitter-icon" size={25} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/houssame-dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn className="linkedin-icon" size={25} />
-                </a>
-                <a
                   href="https://github.com/houssame-dev"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -116,14 +96,11 @@ function Contact() {
                   <FaGithub className="github-icon" size={25} />
                 </a>
               </div>
+              <Footer />
             </div>
           </Col>
-          <Col md={6}>
-            <div
-              className="contact-form"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
+          <Col md={6} className="order-1">
+            <div className="contact-form">
               <h3>
                 <strong>Contact Form</strong>
               </h3>

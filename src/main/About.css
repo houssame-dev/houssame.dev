@@ -1,5 +1,6 @@
 #about {
   background-color: #e5e5e5;
+  min-height: 100vh;
 }
 
 .about-container {
@@ -12,7 +13,7 @@
 
 .about-container h2 {
   color: black;
-  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  font-family: "ZCOOL QingKe HuangYou", sans-serif;
   font-weight: bolder;
   font-size: 4vmax;
 }
@@ -22,7 +23,6 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 2vmax;
 }
-
 
 .about-container Image {
   width: 20px;

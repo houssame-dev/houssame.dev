@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./About.css";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import about1_img from "./images/about1.png";
@@ -7,33 +7,19 @@ import about3_img from "./images/about3.png";
 import about4_img from "./images/about4.png";
 import about5_img from "./images/about5.png";
 import about6_img from "./images/about6.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function About() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <div id="about">
       <Container className="about-container">
         <Row>
           <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
-            <Image
-              src={about1_img}
-              alt="Image 1"
-              fluid
-              rounded
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            />
+            <Image src={about1_img} alt="Image 1" fluid rounded />
           </Col>
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-left" data-aos-duration="2000">
-                About Me
-              </h2>
-              <p data-aos="fade-left" data-aos-duration="3000">
+              <h2>About Me</h2>
+              <p>
                 👋 Hi there! I'm HOUSSAME, a passionate frontend developer with
                 a strong focus on React and Next.js. I thrive on turning ideas
                 into beautifully crafted, user-friendly web applications that
@@ -46,20 +32,11 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-2 mb-4 d-flex align-items-center">
-            <Image
-              src={about2_img}
-              alt="Image 2"
-              fluid
-              rounded
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
+            <Image src={about2_img} alt="Image 2" fluid rounded />
           </Col>
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-right" data-aos-duration="2000">
-                My Journey
-              </h2>
+              <h2>My Journey</h2>
               <p data-aos="fade-right" data-aos-duration="3000">
                 🚀 My journey in web development began several years ago, and
                 I've been on a constant quest to learn and adapt ever since. I
@@ -73,21 +50,12 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
-            <Image
-              src={about3_img}
-              alt="Image 3"
-              fluid
-              rounded
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            />
+            <Image src={about3_img} alt="Image 3" fluid rounded />
           </Col>
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-left" data-aos-duration="2000">
-                What Sets Me Apart
-              </h2>
-              <p data-aos="fade-left" data-aos-duration="3000">
+              <h2>What Sets Me Apart</h2>
+              <p>
                 💡 What sets me apart is my attention to detail and commitment
                 to writing clean, maintainable code. I believe that a
                 well-structured codebase is essential for scalability and
@@ -101,20 +69,11 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-2 mb-4 d-flex align-items-center">
-            <Image
-              src={about4_img}
-              alt="Image 4"
-              fluid
-              rounded
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
+            <Image src={about4_img} alt="Image 4" fluid rounded />
           </Col>
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-right" data-aos-duration="2000">
-                Collaboration
-              </h2>
+              <h2>Collaboration</h2>
               <p data-aos="fade-right" data-aos-duration="3000">
                 🌟 Collaboration is at the heart of my development philosophy. I
                 enjoy working closely with designers, backend developers, and
@@ -127,20 +86,11 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-1 mb-4 d-flex align-items-center">
-            <Image
-              src={about5_img}
-              alt="Image 5"
-              fluid
-              rounded
-              data-aos="fade-right"
-              data-aos-duration="2000"
-            />
+            <Image src={about5_img} alt="Image 5" fluid rounded />
           </Col>
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-left" data-aos-duration="2000">
-                Learning
-              </h2>
+              <h2>Learning</h2>
               <p data-aos="fade-left" data-aos-duration="3000">
                 💼 When I'm not coding, you can often find me exploring the
                 latest tech blogs, contributing to open-source projects, or
@@ -154,21 +104,12 @@ function About() {
 
         <Row className="mt-5">
           <Col md={6} className="order-md-2 mb-4 d-flex align-items-center">
-            <Image
-              src={about6_img}
-              alt="Image 6"
-              fluid
-              rounded
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
+            <Image src={about6_img} alt="Image 6" fluid rounded />
           </Col>
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
-              <h2 data-aos="fade-right" data-aos-duration="2000">
-                Connect
-              </h2>
-              <p data-aos="fade-right" data-aos-duration="3000">
+              <h2>Connect</h2>
+              <p>
                 🌎 Let's connect and create something amazing together! Whether
                 you have a project in mind or just want to chat about the latest
                 in React, I'm always excited to meet fellow developers and
