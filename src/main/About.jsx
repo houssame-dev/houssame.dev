@@ -37,7 +37,7 @@ function About() {
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
               <h2>My Journey</h2>
-              <p data-aos="fade-right" data-aos-duration="3000">
+              <p>
                 🚀 My journey in web development began several years ago, and
                 I've been on a constant quest to learn and adapt ever since. I
                 love staying up-to-date with the latest trends and technologies
@@ -74,7 +74,7 @@ function About() {
           <Col md={6} className="order-md-1 d-flex align-items-center">
             <span>
               <h2>Collaboration</h2>
-              <p data-aos="fade-right" data-aos-duration="3000">
+              <p>
                 🌟 Collaboration is at the heart of my development philosophy. I
                 enjoy working closely with designers, backend developers, and
                 stakeholders to bring ideas to life. Communication and teamwork
@@ -91,7 +91,7 @@ function About() {
           <Col md={6} className="order-md-2 d-flex align-items-center">
             <span>
               <h2>Learning</h2>
-              <p data-aos="fade-left" data-aos-duration="3000">
+              <p>
                 💼 When I'm not coding, you can often find me exploring the
                 latest tech blogs, contributing to open-source projects, or
                 experimenting with new coding techniques. I'm also a firm
