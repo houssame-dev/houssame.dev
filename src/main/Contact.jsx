@@ -32,10 +32,10 @@ function Contact() {
 
     emailjs
       .send(
-        "service_yk8g4sq",
-        "template_tfrl0fj",
+        "service_5g86bvb",
+        "template_b604zli",
         formData,
-        "vYsUdrWvFVz2rdXXc"
+        "7eh_QUyc94E3Tno_0"
       )
       .then(
         (response) => {
