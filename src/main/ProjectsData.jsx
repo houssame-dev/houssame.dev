@@ -1,7 +1,6 @@
 import weather_twoday_img from "./images/weatherapp.jpg";
 import story_corner_img from "./images/storycorner.jpg";
 import color_code_img from "./images/colorcd.jpg";
-import solar_system_img from "./images/solarsystem.jpg";
 import liverpool_fc_img from "./images/liverpool.jpg";
 import yahyavision_img from "./images/yahyavision.jpg";
 
@@ -19,13 +18,6 @@ const ProjectsData = [
     image: liverpool_fc_img,
     url: "https://lfc-demo.netlify.app/",
     code: "https://github.com/Errjem/liverpool-fc",
-  },
-  {
-    title: "Solar System",
-    description: "Explore interactive Solar System planets knowledge.",
-    image: solar_system_img,
-    url: "https://solar-system-dm.netlify.app/",
-    code: "https://github.com/Errjem/solar-system",
   },
   {
     title: "Weather TwoDay",
