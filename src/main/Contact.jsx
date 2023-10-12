@@ -32,15 +32,15 @@ function Contact() {
 
     emailjs
       .send(
-        "service_yk8g4sq",
-        "template_ukdosqa",
+        "service_5g86bvb",
+        "template_b604zli",
         formData,
-        "vYsUdrWvFVz2rdXXc"
+        "7eh_QUyc94E3Tno_0"
       )
       .then(
         (response) => {
-          console.log("Email sent successfully:", response);
-          toast.success("Email sent successfully !", {
+          console.log("Message sent successfully:", response);
+          toast.success("Message sent successfully !", {
             position: toast.POSITION.TOP_RIGHT,
           });
           setFormData({
@@ -50,8 +50,8 @@ function Contact() {
           });
         },
         (error) => {
-          console.error("Email sending failed:", error);
-          toast.error("Email sending failed !", {
+          console.error("Message sending failed:", error);
+          toast.error("Message sending failed !", {
             position: toast.POSITION.TOP_RIGHT,
           });
         }

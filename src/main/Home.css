@@ -49,7 +49,7 @@
   margin-inline: 1rem;
 }
 
-.home-container #btn1 {
+.home-container #btn {
   color: #e5e5e5;
   background-color: transparent;
   border: 3px solid #e5e5e5;
@@ -57,22 +57,7 @@
   transition: 0.4s;
 }
 
-.home-container #btn1:hover {
-  color: #e5e5e5;
-  background-color: #808080;
-  border: 3px solid #808080;
-  transform: scale(1.05);
-}
-
-.home-container #btn2 {
-  color: black;
-  background-color: #e5e5e5;
-  border: 3px solid #e5e5e5;
-  border-radius: 10px;
-  transition: 0.4s;
-}
-
-.home-container #btn2:hover {
+.home-container #btn:hover {
   color: #e5e5e5;
   background-color: #808080;
   border: 3px solid #808080;

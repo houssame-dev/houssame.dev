@@ -20,7 +20,7 @@ function Home() {
             </h1>
             <p>a WEB DEVELOPER</p>
             <div className="div-buttons">
-              <Button variant="light" id="btn2" onClick={showNumber}>
+              <Button variant="light" id="btn" onClick={showNumber}>
                 <RiWhatsappFill /> Contact Me
               </Button>
             </div>
