@@ -1,7 +1,6 @@
 import React from "react";
 import "./ComingSoon.css";
-import logo from "./images/my-logo-white.png";
-
+import logo from "./images/my-logo-black.png";
 
 function ComingSoon() {
   return (
@@ -10,6 +9,7 @@ function ComingSoon() {
         <div className="div-img">
           <img src={logo} alt="logo" />
         </div>
+        <h1>coming soon...</h1>
       </div>
     </div>
   );
