@@ -1,29 +1,50 @@
 #about {
-  background-color: #e5e5e5;
+  background-color: black;
   min-height: 100vh;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin: 1rem;
 }
 
-.about-container {
+#about .about-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 5rem;
+  min-height: 100vh;
+  padding-inline: 0;
 }
 
-.about-container h2 {
-  color: black;
-  font-family: "ZCOOL QingKe HuangYou", sans-serif;
-  font-weight: bolder;
+#about .about-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .about-row .img-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .about-row .text-col {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+}
+
+#about .about-row .text-col h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
   font-size: 4vmax;
+  padding-block: 1rem;
 }
 
-.about-container p {
-  color: black;
-  font-family: "Share Tech Mono", monospace;
-  font-size: 2vmax;
-}
-
-.about-container Image {
-  width: 20px;
+#about .about-row .text-col p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
 }

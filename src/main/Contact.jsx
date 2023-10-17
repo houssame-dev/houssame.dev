@@ -57,19 +57,18 @@ function Contact() {
         }
       );
   };
-
   return (
     <div id="contact">
+      <ToastContainer />
       <Container className="contact-container">
-        <ToastContainer />
-        <h2>Contact Me</h2>
         <Row>
+          <h1>Contact Me</h1>
           <Col md={6} className="order-2">
             <div className="contact-information">
               <h3>
                 <strong>Contact Information</strong>
               </h3>
-              <hr />
+              <br />
               <p>
                 <IoLocationSharp /> Mohammedia, Morocco
               </p>
@@ -104,10 +103,10 @@ function Contact() {
               <h3>
                 <strong>Contact Form</strong>
               </h3>
-              <hr />
+              <br />
               <Form onSubmit={handleSubmit}>
                 <InputGroup>
-                  <InputGroup.Text>
+                  <InputGroup.Text className="inputgroup">
                     <FaUser />
                   </InputGroup.Text>
                   <Form.Control
@@ -121,7 +120,7 @@ function Contact() {
                 </InputGroup>
                 <br />
                 <InputGroup>
-                  <InputGroup.Text>
+                  <InputGroup.Text className="inputgroup">
                     <IoMail />
                   </InputGroup.Text>
                   <Form.Control
@@ -135,7 +134,7 @@ function Contact() {
                 </InputGroup>
                 <br />
                 <InputGroup>
-                  <InputGroup.Text>
+                  <InputGroup.Text className="inputgroup">
                     <BiSolidMessage />
                   </InputGroup.Text>
                   <Form.Control
@@ -148,7 +147,11 @@ function Contact() {
                   />
                 </InputGroup>
                 <br />
-                <Button variant="light" type="submit" className="send-btn">
+                <Button
+                  variant="light"
+                  type="submit"
+                  className="send-btn"
+                >
                   <BsSendFill /> Send Message
                 </Button>
               </Form>

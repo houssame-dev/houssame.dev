@@ -1,0 +1,40 @@
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+  animation: none;
+}
+
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contentBlock--one {
+  width: 100%;
+  height: 100%;
+}

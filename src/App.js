@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import ComingSoon from "./main/ComingSoon";
-// import Top from "./main/Top";
-// import Home from "./main/Home";
-// import About from "./main/About";
-// import Skills from "./main/Skills";
-// import Projects from "./main/Projects";
-// import Contact from "./main/Contact";
+import Top from "./main/Top";
+import Home from "./main/Home";
+import About from "./main/About";
+import Work from "./main/Work";
+import Services from "./main/Services";
+import Contact from "./main/Contact";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="app">
-      {/* <Top />
+      <Top />
       <Home />
       <About />
-      <Skills />
-      <Projects />
-      <Contact /> */}
-      <ComingSoon />
+      <Work />
+      <Services />
+      <Contact />
     </div>
   );
 }

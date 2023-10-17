@@ -1,0 +1,50 @@
+#services {
+  background-color: black;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin: 1rem;
+  padding: 8rem 1rem;
+}
+
+#services .title-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 3rem;
+}
+
+#services .title-col h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 4vmax;
+}
+
+#services .service-col {
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+#services .service-col .card {
+  background-color: white;
+  border-radius: 0;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#services .service-col .card .card-title {
+  text-align: center;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#services .service-col .card .card-text {
+  text-align: start;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}

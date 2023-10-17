@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { GrClose } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import my_logo from "./images/my-logo-black.png";
 import "./Top.css";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 function Top() {
   const [expanded, setExpanded] = useState(false);
@@ -17,104 +15,77 @@ function Top() {
   };
 
   return (
-    <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        className="navbar"
-        fixed="top"
-        expanded={expanded}
-      >
-        <Container>
-          <Nav.Link href="/" onClick={handleNavItemClick}>
-            <img src={my_logo} alt="h-logo" id="h-logo" />
-          </Nav.Link>
-          {expanded ? (
-            <Navbar.Toggle
-              aria-controls="responsive-navbar-nav"
-              id="toggler"
-              onClick={() => setExpanded(!expanded)}
-            >
-              <span>
-                <GrClose />
-              </span>
-            </Navbar.Toggle>
-          ) : (
-            <Navbar.Toggle
-              aria-controls="responsive-navbar-nav"
-              id="toggler"
-              onClick={() => setExpanded(!expanded)}
-            >
-              <span>
-                <GiHamburgerMenu />
-              </span>
-            </Navbar.Toggle>
-          )}
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto" id="nav-items">
-              <Nav.Link
-                href="#home"
-                className="link-item"
-                onClick={handleNavItemClick}
-              >
-                Home
-              </Nav.Link>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="navbar "
+      fixed="top"
+      expanded={expanded}
+    >
+      <Nav.Link href="#home" onClick={handleNavItemClick}>
+        <img src={my_logo} alt="logo" className="logo-mobile" />
+      </Nav.Link>
+      {expanded ? (
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="toggler"
+          onClick={() => setExpanded(!expanded)}
+        >
+          <span>
+            <GrClose />
+          </span>
+        </Navbar.Toggle>
+      ) : (
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="toggler"
+          onClick={() => setExpanded(!expanded)}
+        >
+          <span>
+            <GiHamburgerMenu />
+          </span>
+        </Navbar.Toggle>
+      )}
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Container fluid>
+          <Row>
+            <Col lg={4} className="link-col">
               <hr />
               <Nav.Link
                 href="#about"
-                className="link-item"
+                className="link"
                 onClick={handleNavItemClick}
               >
-                About
+                ABOUT
               </Nav.Link>
               <hr />
               <Nav.Link
-                href="#skills"
-                className="link-item"
+                href="#work"
+                className="link"
                 onClick={handleNavItemClick}
               >
-                Skills
+                WORK
               </Nav.Link>
               <hr />
-              <Nav.Link
-                href="#projects"
-                className="link-item"
-                onClick={handleNavItemClick}
-              >
-                Projects
+            </Col>
+            <Col lg={4} className="logo-col">
+              <Nav.Link href="#home" onClick={handleNavItemClick}>
+                <img src={my_logo} alt="logo" className="logo-desktop" />
               </Nav.Link>
-              <hr />
-              <Nav.Link
+            </Col>
+            <Col lg={4} className="btn-col">
+              <Button
+                className="btn"
                 href="#contact"
-                className="link-item"
                 onClick={handleNavItemClick}
               >
-                Contact
-              </Nav.Link>
-            </Nav>
-            <hr />
-            <div className="social-icons">
-              <a
-                href="https://twitter.com/houssamedev"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleNavItemClick}
-              >
-                <FaSquareXTwitter size={30} className="social-icon" />
-              </a>
-              <a
-                href="https://github.com/houssame-dev"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={handleNavItemClick}
-              >
-                <FaGithubSquare size={30} className="social-icon" />
-              </a>
-            </div>
-          </Navbar.Collapse>
+                Hit me up
+              </Button>
+            </Col>
+          </Row>
         </Container>
-      </Navbar>
-    </>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 

@@ -1,71 +1,61 @@
 #home {
-  padding-top: 2rem;
-  background-color: #000000;
-  background-image: linear-gradient(
-    45deg,
-    #000000 0%,
-    #000000 46%,
-    #808080 100%
-  );
+  background-color: black;
+  min-height: 100vh;
+  padding-inline: 1rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin: 0 1rem 1rem;
+}
+
+#home .home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
-.home-container {
+#home .home-container h1 {
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 8vmax;
+  padding-block: 1rem;
+}
+
+#home .home-container h1 div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.home-container h1 {
-  text-align: center;
-  color: #e5e5e5;
-  font-family: "ZCOOL QingKe HuangYou", sans-serif;
-  letter-spacing: 10px;
-  font-weight: bolder;
-  font-size: 6vmax;
-  margin-block: 1rem;
-}
-
-.home-container p {
-  text-align: center;
-  color: #e5e5e5;
-  font-family: "Share Tech Mono", monospace;
-  font-size: 3vmax;
-  margin-bottom: 4rem;
-  font-weight: 100;
-}
-
-.home-container .div-buttons {
+#home .home-container .div-button {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-family: "Share Tech Mono", monospace;
 }
 
-.home-container .div-buttons button {
-  margin-inline: 1rem;
-}
-
-.home-container #btn {
-  color: #e5e5e5;
-  background-color: transparent;
-  border: 3px solid #e5e5e5;
-  border-radius: 10px;
+#home .home-container .div-button button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 15px 20px;
+  border-radius: 0;
   transition: 0.4s;
 }
 
-.home-container #btn:hover {
-  color: #e5e5e5;
-  background-color: #808080;
-  border: 3px solid #808080;
-  transform: scale(1.05);
-}
-
-@media screen and (max-width: 350.5px) {
-  .home-container .div-buttons button {
-    margin-inline: 0.2rem;
-  }
+#home .home-container .div-button button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
