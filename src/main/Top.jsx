@@ -67,6 +67,14 @@ function Top() {
                 WORK
               </Nav.Link>
               <hr />
+              <Nav.Link
+                href="#services"
+                className="link"
+                onClick={handleNavItemClick}
+              >
+                SERVICES
+              </Nav.Link>
+              <hr />
             </Col>
             <Col lg={4} className="logo-col">
               <Nav.Link href="#home" onClick={handleNavItemClick}>
