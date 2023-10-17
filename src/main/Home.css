@@ -1,5 +1,9 @@
 #home {
   background-color: black;
+  background-image: url("./images/black2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   padding-inline: 1rem;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
