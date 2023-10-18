@@ -1,15 +1,11 @@
 #home {
   background-color: black;
-  background-image: url("./images/black2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 100vh;
   padding-inline: 1rem;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  margin: 0 1rem 1rem;
+  margin: 1rem;
 }
 
 #home .home-container {
