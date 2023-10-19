@@ -9,7 +9,7 @@ import website28 from "./images/website28.jpg";
 import website29 from "./images/website29.jpg";
 import website30 from "./images/website30.jpg";
 
-const WorkImages = [
+const WorkImages2 = [
   website21,
   website22,
   website23,
@@ -22,4 +22,4 @@ const WorkImages = [
   website30,
 ];
 
-export default WorkImages;
+export default WorkImages2;

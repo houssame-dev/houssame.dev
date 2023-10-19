@@ -4,6 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import WorkImages from "./WorkImages";
 import InfiniteLooper from "./InfiniteLooper";
 import WorkImages1 from "./WorkImages1";
+import WorkImages2 from "./WorkImages2";
 
 function Work() {
   return (
@@ -60,7 +61,7 @@ function Work() {
             </InfiniteLooper>
             <InfiniteLooper speed="80" direction="left">
               <div className="contentBlock contentBlock--one">
-                {WorkImages.map((image, index) => (
+                {WorkImages2.map((image, index) => (
                   <Card.Img
                     key={index}
                     variant="top"
@@ -70,7 +71,7 @@ function Work() {
                 ))}
               </div>
               <div className="contentBlock contentBlock--one">
-                {WorkImages.map((image, index) => (
+                {WorkImages2.map((image, index) => (
                   <Card.Img
                     key={index}
                     variant="top"
