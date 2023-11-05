@@ -4,8 +4,6 @@ import "./App.css";
 import Top from "./main/Top";
 import Home from "./main/Home";
 import About from "./main/About";
-import Work from "./main/Work";
-import Services from "./main/Services";
 import Contact from "./main/Contact";
 import { ThemeProvider } from "./main/ThemeContext";
 
@@ -19,9 +17,7 @@ function App() {
         <Top />
         <Home />
         <About />
-        {/* <Work />
-      <Services />
-      */}<Contact /> 
+        <Contact />
       </ThemeProvider>
     </div>
   );
