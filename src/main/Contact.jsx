@@ -1,16 +1,24 @@
 import React, { useState } from "react";
-import { Container, Form, Button, InputGroup, Row, Col } from "react-bootstrap";
-import { FaUser, FaXTwitter, FaGithub } from "react-icons/fa6";
-import { IoMail, IoLocationSharp, IoCall } from "react-icons/io5";
-import { BiSolidMessage } from "react-icons/bi";
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import { BsSendFill } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaLocationDot,
+  FaPhone,
+  FaXTwitter,
+} from "react-icons/fa6";
 import "./Contact.css";
 import emailjs from "emailjs-com";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Footer from "./Footer";
+import Swal from "sweetalert2";
+import { useTheme } from "./ThemeContext";
 
 function Contact() {
+  const currentYear = new Date().getFullYear();
+  const authorName = "Houssame";
+  const { isDarkMode } = useTheme();
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,138 +35,131 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
+    setLoading(true);
+    try {
+      const response = await emailjs.send(
         "service_5g86bvb",
         "template_b604zli",
         formData,
         "7eh_QUyc94E3Tno_0"
-      )
-      .then(
-        (response) => {
-          console.log("Message sent successfully:", response);
-          toast.success("Message sent successfully !", {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error("Message sending failed:", error);
-          toast.error("Message sending failed !", {
-            position: toast.POSITION.TOP_RIGHT,
-          });
-        }
       );
+
+      console.log("Message sent successfully:", response);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        color: "#000000",
+        title: "Message sent successfully!",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Message sending failed:", error);
+      Swal.fire("Error", "Message sending failed!", "error");
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <div id="contact">
-      <ToastContainer />
-      <Container className="contact-container">
-        <Row>
-          <h1>Contact Me</h1>
-          <Col md={6} className="order-2">
-            <div className="contact-information">
-              <h3>
-                <strong>Contact Information</strong>
-              </h3>
-              <br />
-              <p>
-                <IoLocationSharp /> Mohammedia, Morocco
-              </p>
-              <p>
-                <IoCall /> (+212) 623-659049
-              </p>
-              <p>
-                <IoMail /> houssame.dev@gmail.com
-              </p>
-              <br />
-              <div className="social-icons">
-                <a
-                  href="https://twitter.com/houssamedev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter className="twitter-icon" size={25} />
-                </a>
-                <a
-                  href="https://github.com/houssame-dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub className="github-icon" size={25} />
-                </a>
-              </div>
-              <Footer />
-            </div>
-          </Col>
-          <Col md={6} className="order-1">
-            <div className="contact-form">
-              <h3>
-                <strong>Contact Form</strong>
-              </h3>
-              <br />
-              <Form onSubmit={handleSubmit}>
-                <InputGroup>
-                  <InputGroup.Text className="inputgroup">
-                    <FaUser />
-                  </InputGroup.Text>
+      <div className="contact" id={isDarkMode ? "dark-mode" : "light-mode"}>
+        <Container fluid>
+          <Row>
+            <h1>WORK WITH ME , CONTACT ME , OR JUST SAY HELLO</h1>
+            <Col md={8} className="order-1">
+              <div className="contact-form">
+                <Form onSubmit={handleSubmit} className="form">
                   <Form.Control
                     type="text"
                     name="name"
-                    placeholder="Type Your Name"
+                    placeholder="Name"
                     value={name}
                     onChange={handleInputChange}
                     required
                   />
-                </InputGroup>
-                <br />
-                <InputGroup>
-                  <InputGroup.Text className="inputgroup">
-                    <IoMail />
-                  </InputGroup.Text>
                   <Form.Control
                     type="email"
                     name="email"
-                    placeholder="Type Your Email"
+                    placeholder="Email"
                     value={email}
                     onChange={handleInputChange}
                     required
                   />
-                </InputGroup>
-                <br />
-                <InputGroup>
-                  <InputGroup.Text className="inputgroup">
-                    <BiSolidMessage />
-                  </InputGroup.Text>
                   <Form.Control
                     as="textarea"
                     name="message"
-                    placeholder="Type Your Message"
+                    placeholder="Message"
                     value={message}
                     onChange={handleInputChange}
                     required
+                    style={{ minHeight: "150px" }}
                   />
-                </InputGroup>
-                <br />
-                <Button
-                  variant="light"
-                  type="submit"
-                  className="send-btn"
-                >
-                  <BsSendFill /> Send Message
-                </Button>
-              </Form>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+                  <Button
+                    variant="light"
+                    type="submit"
+                    className="send-btn"
+                    disabled={loading}
+                  >
+                    <BsSendFill /> Send Message
+                  </Button>
+                </Form>
+              </div>
+            </Col>
+            <Col md={4} className="order-2">
+              <div>
+                <div className="informations">
+                  <div className="location">
+                   <span><FaLocationDot /></span>  <span>Mohammedia, Morocco</span>
+                  </div>
+                  <div className="phone-number">
+                    <FaPhone /> (+212) 623-659049
+                  </div>
+                  <div className="gmail">
+                    <MdEmail /> houssame.dev@gmail.com
+                  </div>
+                </div>
+                <div className="social-media">
+                  <a
+                    href="https://www.linkedin.com/in/houssame-errjem-93099a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={isDarkMode ? "dark-mode" : "light-mode"}
+                  >
+                    <FaLinkedinIn size={15} />
+                  </a>
+                  <a
+                    href="https://github.com/houssame-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={isDarkMode ? "dark-mode" : "light-mode"}
+                  >
+                    <FaGithub size={15} />
+                  </a>
+                  <a
+                    href="https://twitter.com/houssamedev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={isDarkMode ? "dark-mode" : "light-mode"}
+                  >
+                    <FaXTwitter size={15} />
+                  </a>
+                </div>
+                <div className="copyright">
+                  &copy; {currentYear} {authorName}
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }

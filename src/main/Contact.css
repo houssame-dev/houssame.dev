@@ -1,102 +1,112 @@
 #contact {
-  background-color: black;
-  background-image: url("./images/black4.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  margin: 1rem;
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+}
+
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contact-container {
-  padding-block: 5rem 3rem;
   padding-inline: 1rem;
+  min-height: 100vh;
 }
 
-.contact-container h1 {
+#contact h1 {
   text-align: center;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 4vmax;
-  padding: 4rem 0 3rem;
+  padding: 3rem 0 3rem;
 }
 
-.contact-container .inputgroup {
-  border-radius: 0;
-  background-color: white;
+#contact .contact-form {
+  max-width: 70%;
+  margin-inline: auto;
 }
 
-.contact-container .contact-form h3 {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-
-.contact-container .form-control {
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 0;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-
-.contact-container .send-btn {
-  color: black;
-  background-color: white;
-  border-radius: 0;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  border: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  transition: 0.4s;
-}
-
-.contact-container .send-btn:hover {
-  color: black;
-  background-color: lightgray;
-}
-
-.contact-container .contact-information {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#contact .form-control {
+  background-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
-  text-align: end;
+  border-radius: 0;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  padding-block: 0.5rem;
+  margin-block: 1rem;
 }
 
-.contact-container .social-icons {
-  margin-top: 20px;
-  justify-content: end;
+#contact .form-control:hover {
+  cursor: url("./images/cursor-type.png"), pointer;
 }
 
-.contact-container .social-icons a {
-  margin-right: 20px;
-  text-decoration: none;
-  color: white;
+#contact .send-btn {
+  border-radius: 0;
+  background-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  padding-block: 0.5rem;
   transition: 0.4s;
 }
 
-.contact-container .social-icons a:hover {
-  color: lightgray;
-  transform: scale(1.1);
+#contact .send-btn:hover {
+  cursor: url("./images/cursor-hover.png"), pointer;
+}
+
+#contact .order-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+}
+
+#contact .order-2 .informations {
+  padding-block: 1rem;
+}
+
+#contact .order-2 .informations .location,
+#contact .order-2 .informations .phone-number,
+#contact .order-2 .informations .gmail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+#contact .order-2 .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+#contact .order-2 .social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#contact .order-2 .social-media a:hover {
+  cursor: url("./images/cursor-hover.png"), pointer;
+  background-color: #6ab258;
+}
+
+#contact .order-2 .copyright {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767.5px) {
-  .contact-container .contact-information {
-    margin-top: 3rem;
-    text-align: start;
+  #contact {
+    margin: 1rem;
   }
-  .contact-container .social-icons {
-    margin-top: 20px;
-    justify-content: start;
+  #contact .contact-form {
+    max-width: 100%;
+    margin-inline: auto;
   }
 }

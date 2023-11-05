@@ -1,61 +1,153 @@
 #home {
-  background-color: black;
+  display: block;
+  margin: 2rem;
+}
+
+#home .home-card {
   min-height: 100vh;
-  padding-inline: 1rem;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  margin: 1rem;
-}
-
-#home .home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-#home .home-container h1 {
-  text-align: center;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 8vmax;
-  padding-block: 1rem;
-}
-
-#home .home-container h1 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#home .home-container .div-button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-#home .home-container .div-button button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  font-weight: bold;
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  padding: 15px 20px;
+  border: none;
   border-radius: 0;
-  transition: 0.4s;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
-#home .home-container .div-button button:hover {
-  color: white;
-  background-color: black;
-  border: 2px solid white;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+#home .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#home .top-left {
+  display: block;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#home .top-left .hi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#home .top-left .portfolio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#home .top-right {
+  display: block;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+
+#home .top-right .available {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+#home .top-right .date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+#home .mid {
+  text-align: center;
+  font-size: 13rem;
+  line-height: 80%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#home .bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: normal;
+  font-size: 1rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#home .bot-left {
+  display: block;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#home .bot-left .designed,
+#home .bot-left .developed,
+#home .bot-left a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#home .bot-left a:hover {
+  cursor: url("./images/cursor-hover.png"), pointer;
+  color: #6AB258;
+}
+
+#home .bot-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .bot-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#home .bot-mid .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#home .bot-mid .social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#home .bot-mid .social-media a:hover {
+  cursor: url("./images/cursor-hover.png"), pointer;
+  background-color: #6AB258;
+}
+
+@media (max-width: 767.5px) {
+  #home {
+    margin: 1rem;
+  }
+  #home .top,
+  #home .bot {
+    display: block;
+  }
+  #home .top-left,
+  #home .top-right,
+  #home .bot-left,
+  #home .bot-mid,
+  #home .bot-right {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    padding-block: 2rem;
+    text-align: center;
+  }
 }

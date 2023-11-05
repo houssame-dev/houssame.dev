@@ -1,98 +1,117 @@
 import React, { useState } from "react";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { GrClose } from "react-icons/gr";
-import { GiHamburgerMenu } from "react-icons/gi";
-import my_logo from "./images/my-logo-black.png";
 import "./Top.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
+import { VscChromeClose } from "react-icons/vsc";
+import { TfiMenu } from "react-icons/tfi";
+import { ImFolderOpen } from "react-icons/im";
+import { FaPhoneVolume, FaUserTie } from "react-icons/fa6";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { useTheme } from "./ThemeContext";
 
 function Top() {
+  const { toggleDarkMode } = useTheme();
+  const { isDarkMode } = useTheme();
   const [expanded, setExpanded] = useState(false);
-
   const handleNavItemClick = () => {
     setExpanded(false);
   };
-
+  const handleNavbarBrandClick = () => {
+    handleNavItemClick();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  // Conditionally set the logo based on the dark or light mode
+  const logo = isDarkMode
+    ? require("./images/my-logo-white.png")
+    : require("./images/my-logo-black.png");
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
-      className="navbar "
-      fixed="top"
+      expand="md"
+      className="navbar"
       expanded={expanded}
+      sticky="top"
+      id={isDarkMode ? "dark-mode" : "light-mode"}
     >
-      <Nav.Link href="#home" onClick={handleNavItemClick}>
-        <img src={my_logo} alt="logo" className="logo-mobile" />
-      </Nav.Link>
-      {expanded ? (
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          className="toggler"
-          onClick={() => setExpanded(!expanded)}
-        >
-          <span>
-            <GrClose />
-          </span>
-        </Navbar.Toggle>
-      ) : (
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          className="toggler"
-          onClick={() => setExpanded(!expanded)}
-        >
-          <span>
-            <GiHamburgerMenu />
-          </span>
-        </Navbar.Toggle>
-      )}
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Container fluid>
-          <Row>
-            <Col lg={4} className="link-col">
-              <hr />
-              <Nav.Link
-                href="#about"
-                className="link"
-                onClick={handleNavItemClick}
-              >
-                ABOUT
-              </Nav.Link>
-              <hr />
-              <Nav.Link
-                href="#work"
-                className="link"
-                onClick={handleNavItemClick}
-              >
-                WORK
-              </Nav.Link>
-              <hr />
-              <Nav.Link
-                href="#services"
-                className="link"
-                onClick={handleNavItemClick}
-              >
-                SERVICES
-              </Nav.Link>
-              <hr />
-            </Col>
-            <Col lg={4} className="logo-col">
-              <Nav.Link href="#home" onClick={handleNavItemClick}>
-                <img src={my_logo} alt="logo" className="logo-desktop" />
-              </Nav.Link>
-            </Col>
-            <Col lg={4} className="btn-col">
-              <Button
-                className="btn"
-                href="#contact"
-                onClick={handleNavItemClick}
-              >
-                Hit me up
-              </Button>
-            </Col>
-          </Row>
-        </Container>
-      </Navbar.Collapse>
+      <Container fluid>
+        <Navbar.Brand>
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+            onClick={handleNavbarBrandClick}
+          />
+        </Navbar.Brand>
+        <div className="switch-mode-mobile">
+          <label className="switch">
+            <input type="checkbox" className="cb" onChange={toggleDarkMode} />
+            <span className="toggle">
+              <span className="left">
+                <MdLightMode size={20} />
+              </span>
+              <span className="right">
+                <MdDarkMode size={20} />
+              </span>
+            </span>
+          </label>
+        </div>
+        {expanded ? (
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="toggler"
+            onClick={() => setExpanded(!expanded)}
+            id={isDarkMode ? "dark-mode" : "light-mode"}
+          >
+            <VscChromeClose />
+          </Navbar.Toggle>
+        ) : (
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="toggler"
+            onClick={() => setExpanded(!expanded)}
+            id={isDarkMode ? "dark-mode" : "light-mode"}
+          >
+            <TfiMenu />
+          </Navbar.Toggle>
+        )}
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <a
+              href="#about"
+              onClick={handleNavItemClick}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <FaUserTie /> about
+            </a>
+            <a
+              href="#projects"
+              onClick={handleNavItemClick}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <ImFolderOpen /> projects
+            </a>
+            <a
+              href="#contact"
+              onClick={handleNavItemClick}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <FaPhoneVolume /> contact
+            </a>
+          </Nav>
+          <div className="switch-mode-desktop">
+            <label className="switch">
+              <input type="checkbox" className="cb" onChange={toggleDarkMode} />
+              <span className="toggle">
+                <span className="left">
+                  <MdLightMode size={20} />
+                </span>
+                <span className="right">
+                  <MdDarkMode size={20} />
+                </span>
+              </span>
+            </label>
+          </div>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

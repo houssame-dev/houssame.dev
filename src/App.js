@@ -7,19 +7,22 @@ import About from "./main/About";
 import Work from "./main/Work";
 import Services from "./main/Services";
 import Contact from "./main/Contact";
+import { ThemeProvider } from "./main/ThemeContext";
 
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="app">
-      <Top />
-      <Home />
-      <About />
-      <Work />
+    <div className="App">
+      <ThemeProvider>
+        <Top />
+        <Home />
+        <About />
+        {/* <Work />
       <Services />
-      <Contact />
+      */}<Contact /> 
+      </ThemeProvider>
     </div>
   );
 }

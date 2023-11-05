@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+  cursor: url("./main/images/cursor.png"), pointer;
+}
+
 body {
   overflow-x: hidden;
+  background-color: #6ab258;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Dark Mode */
+
+#dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#dark-mode .toggler,
+#dark-mode .social-media a,
+#dark-mode .form-control,
+#dark-mode .send-btn {
+  border: 2px solid white;
+  color: white;
+}
+
+#dark-mode .form-control::placeholder {
+  color: white;
+}
+
+#dark-mode .send-btn:hover {
+  border: 2px solid white;
+  color: black;
+  background-color: white;
+}
+
+#dark-mode .order-2 .social-media,
+#dark-mode .order-2 .informations {
+  border-bottom: 2px solid white;
+}
+
+#dark-mode .line-col .line-wrap--vertical {
+  border-left: 2px solid white;
+}
+
+/*------------------------*/
+
+/* Light Mode */
+
+#light-mode {
+  background-color: white;
+  color: black; 
+}
+
+#light-mode .toggler,
+#light-mode .social-media a,
+#light-mode .form-control,
+#light-mode .send-btn {
+  border: 2px solid black;
+  color: black;
+}
+
+#light-mode .form-control::placeholder {
+  color: black;
+}
+
+#light-mode .send-btn:hover {
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+}
+
+#light-mode .order-2 .social-media,
+#light-mode .order-2 .informations {
+  border-bottom: 2px solid black;
+}
+
+#light-mode .line-col .line-wrap--vertical {
+  border-left: 2px solid black;
 }

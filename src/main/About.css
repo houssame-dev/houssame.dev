@@ -1,50 +1,91 @@
 #about {
-  background-color: black;
+  margin: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
   min-height: 100vh;
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    margin: 1rem;
-}
-
-#about .about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding-inline: 0;
-}
-
-#about .about-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#about .about-row .img-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #about .about-row .text-col {
   display: block;
   justify-content: center;
   align-items: center;
-  padding-inline: 3rem;
   padding-block: 3rem;
 }
 
 #about .about-row .text-col h1 {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 4vmax;
   padding-block: 1rem;
 }
 
 #about .about-row .text-col p {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+#about .about-row .text-col p span {
+  text-decoration: underline;
+}
+
+#about .line-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .line-col .line-wrap--vertical {
+  width: 0;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 300px;
+}
+
+#about .line-col .line-wrap__word {
+  padding: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+#about .image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .image-col .image-card {
+  border: 0;
+  border-radius: 0;
+  background-color: #6ab258;
+}
+
+#about .image-col .image-card .image {
+  border: 0;
+  border-radius: 0;
+}
+
+@media (max-width: 767.5px) {
+  #about {
+    margin: 1rem;
+  }
+  #about .about-row .text-col p {
+    max-width: 100%;
+    text-align: justify;
+  }
 }
