@@ -7,12 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline: 1rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
 #about .about-row .text-col {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-block: 3rem;
@@ -23,17 +23,23 @@
   font-weight: bold;
   font-size: 4vmax;
   padding-block: 1rem;
+  max-width: 50%;
 }
 
 #about .about-row .text-col p {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   text-align: justify;
   padding-top: 2rem;
 }
 
-#about .about-row .text-col p span {
+#about .about-row .text-col p .skills-title {
   text-decoration: underline;
+}
+
+#about .about-row .text-col p .skills {
+  font-weight: normal;
 }
 
 #about .line-col {
@@ -64,28 +70,40 @@
 }
 
 #about .image-col {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
-#about .image-col .image-card {
-  border: 0;
-  border-radius: 0;
-  background-color: #6ab258;
-}
-
-#about .image-col .image-card .image {
-  border: 0;
-  border-radius: 0;
+#about .image-col .img {
+  width: 450px;
+  margin: 0.5rem;
+  border: none;
+  padding: 0.1rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 @media (max-width: 767.5px) {
   #about {
     margin: 1rem;
   }
+  #about .about-row .text-col h1 {
+    max-width: 100%;
+  }
   #about .about-row .text-col p {
     max-width: 100%;
     text-align: justify;
+  }
+  #about .line-col {
+    display: none;
+  }
+  #about .image-col .img {
+    width: 150px;
+    margin: 0.5rem;
+    border: none;
+    padding: 0.1rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
   }
 }

@@ -6,6 +6,7 @@ import Home from "./main/Home";
 import About from "./main/About";
 import Contact from "./main/Contact";
 import { ThemeProvider } from "./main/ThemeContext";
+import Services from "./main/Services";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
         <Top />
         <Home />
         <About />
+        <Services />
         <Contact />
       </ThemeProvider>
     </div>

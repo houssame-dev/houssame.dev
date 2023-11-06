@@ -100,7 +100,7 @@ function Contact() {
                     value={message}
                     onChange={handleInputChange}
                     required
-                    style={{ minHeight: "150px" }}
+                    className="textarea"
                   />
                   <Button
                     variant="light"
@@ -117,7 +117,10 @@ function Contact() {
               <div>
                 <div className="informations">
                   <div className="location">
-                   <span><FaLocationDot /></span>  <span>Mohammedia, Morocco</span>
+                    <span>
+                      <FaLocationDot />
+                    </span>{" "}
+                    <span>Mohammedia, Morocco</span>
                   </div>
                   <div className="phone-number">
                     <FaPhone /> (+212) 623-659049

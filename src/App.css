@@ -45,13 +45,17 @@ body {
   border-left: 2px solid white;
 }
 
+#dark-mode .service-col .card {
+  border: 2px solid white;
+}
+
 /*------------------------*/
 
 /* Light Mode */
 
 #light-mode {
   background-color: white;
-  color: black; 
+  color: black;
 }
 
 #light-mode .toggler,
@@ -79,4 +83,8 @@ body {
 
 #light-mode .line-col .line-wrap--vertical {
   border-left: 2px solid black;
+}
+
+#light-mode .service-col .card {
+  border: 2px solid black;
 }

@@ -5,7 +5,11 @@ import { VscChromeClose } from "react-icons/vsc";
 import { TfiMenu } from "react-icons/tfi";
 import { ImFolderOpen } from "react-icons/im";
 import { FaPhoneVolume, FaUserTie } from "react-icons/fa6";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
+import {
+  MdLightMode,
+  MdDarkMode,
+  MdOutlineMiscellaneousServices,
+} from "react-icons/md";
 import { useTheme } from "./ThemeContext";
 
 function Top() {
@@ -80,21 +84,28 @@ function Top() {
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <FaUserTie /> about
+              <FaUserTie /> About
             </a>
             <a
               href="#projects"
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <ImFolderOpen /> projects
+              <ImFolderOpen /> Projects
+            </a>
+            <a
+              href="#services"
+              onClick={handleNavItemClick}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <MdOutlineMiscellaneousServices /> Services
             </a>
             <a
               href="#contact"
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <FaPhoneVolume /> contact
+              <FaPhoneVolume /> Contact
             </a>
           </Nav>
           <div className="switch-mode-desktop">

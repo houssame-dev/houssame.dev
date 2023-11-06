@@ -46,18 +46,18 @@ function Home() {
             <Col className="mid">
               <InfiniteLooper speed="25" direction="left">
                 <div className="contentBlock contentBlock--one">
-                 * FRONT-END DEVELOPER
+                 * FRONT-END DEVELOPER *
                 </div>
                 <div className="contentBlock contentBlock--one">
-                 * FRONT-END DEVELOPER
+                 * FRONT-END DEVELOPER *
                 </div>
               </InfiniteLooper>
               <InfiniteLooper speed="25" direction="right">
                 <div className="contentBlock contentBlock--one">
-                 * UI/UX DESIGNER
+                 * UI/UX DESIGNER *
                 </div>
                 <div className="contentBlock contentBlock--one">
-                 * UI/UX DESIGNER
+                 * UI/UX DESIGNER *
                 </div>
               </InfiniteLooper>
             </Col>
