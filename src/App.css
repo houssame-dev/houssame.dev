@@ -9,6 +9,33 @@ body {
   background-color: #6ab258;
 }
 
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #6ab258;
+  border: 2px solid white;
+  border-radius: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border: 2px solid white;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  border: 3px solid white;
+}
+
 /*--------------------------------------------------------------------------------------------*/
 
 /* Dark Mode */
