@@ -46,7 +46,7 @@ function About() {
               </div>
             </Col>
             <Col md={5} className="image-col">
-              <div>
+              <Col xs={12}>
                 <InfiniteLooper speed="80" direction="left">
                   <div className="contentBlock contentBlock--one">
                     {WorkImages.map((image, index) => (
@@ -113,7 +113,7 @@ function About() {
                     ))}
                   </div>
                 </InfiniteLooper>
-              </div>
+              </Col>
             </Col>
           </Row>
         </Container>

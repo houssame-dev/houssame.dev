@@ -19,6 +19,7 @@ function Contact() {
   const authorName = "Houssame";
   const { isDarkMode } = useTheme();
   const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState("Send Message");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,6 +39,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setButtonText("Sending...");
     try {
       const response = await emailjs.send(
         "service_5g86bvb",
@@ -65,6 +67,7 @@ function Contact() {
       console.error("Message sending failed:", error);
       Swal.fire("Error", "Message sending failed!", "error");
     } finally {
+      setButtonText("Send Message");
       setLoading(false);
     }
   };
@@ -72,9 +75,9 @@ function Contact() {
     <div id="contact">
       <div className="contact" id={isDarkMode ? "dark-mode" : "light-mode"}>
         <Container fluid>
+          <h1>WORK WITH ME , CONTACT ME , OR JUST SAY HELLO</h1>
           <Row>
-            <h1>WORK WITH ME , CONTACT ME , OR JUST SAY HELLO</h1>
-            <Col md={8} className="order-1">
+            <Col md={6} className="order-1">
               <div className="contact-form">
                 <Form onSubmit={handleSubmit} className="form">
                   <Form.Control
@@ -108,18 +111,18 @@ function Contact() {
                     className="send-btn"
                     disabled={loading}
                   >
-                    <BsSendFill /> Send Message
+                    <BsSendFill /> <span>{buttonText}</span>
                   </Button>
                 </Form>
               </div>
             </Col>
-            <Col md={4} className="order-2">
+            <Col md={6} className="order-2">
               <div>
                 <div className="informations">
                   <div className="location">
                     <span>
                       <FaLocationDot />
-                    </span>{" "}
+                    </span>
                     <span>Mohammedia, Morocco</span>
                   </div>
                   <div className="phone-number">

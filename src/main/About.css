@@ -1,6 +1,6 @@
 #about {
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 .about {
@@ -70,7 +70,7 @@
 }
 
 #about .image-col {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

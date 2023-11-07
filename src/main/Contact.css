@@ -1,6 +1,6 @@
 #contact {
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 .contact {
@@ -55,6 +55,10 @@
   font-weight: bold;
   padding-block: 0.5rem;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 #contact .send-btn:hover {
@@ -101,7 +105,6 @@
 
 #contact .order-2 .social-media a:hover {
   cursor: url("./images/cursor-hover.png"), pointer;
-  background-color: #6ab258;
 }
 
 #contact .order-2 .copyright {
@@ -114,6 +117,9 @@
 @media screen and (max-width: 767.5px) {
   #contact {
     margin: 1rem;
+  }
+  #contact h1 {
+    max-width: 100%;
   }
   #contact .contact-form {
     max-width: 100%;

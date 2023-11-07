@@ -4,13 +4,13 @@
 }
 
 #home .home-card {
-  min-height: 100vh;
+  min-height: 95vh;
   border: none;
   border-radius: 0;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 #home .top {
@@ -98,7 +98,6 @@
 
 #home .bot-left a:hover {
   cursor: url("./images/cursor-hover.png"), pointer;
-  color: #6ab258;
 }
 
 #home .bot-mid {
@@ -129,7 +128,6 @@
 
 #home .bot-mid .social-media a:hover {
   cursor: url("./images/cursor-hover.png"), pointer;
-  background-color: #6ab258;
 }
 
 @media (max-width: 767.5px) {

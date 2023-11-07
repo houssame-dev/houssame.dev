@@ -1,10 +1,10 @@
 .navbar {
-  margin: 2rem 2rem;
+  margin: 0 2rem;
   border-radius: 0;
   padding: 0 1rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 .navbar .logo {
@@ -20,18 +20,16 @@
 }
 
 .ms-auto a {
-  color: black;
   text-decoration: none;
   padding: 15px 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   font-weight: bold;
 }
 
 .ms-auto a:hover {
-  color: white;
-  background-color: black;
   padding: 15px 10px;
   text-decoration: underline;
   cursor: url("./images/cursor-hover.png"), pointer;
@@ -51,7 +49,7 @@
 @media (max-width: 767.5px) {
   .navbar {
     padding-block: 0.5rem;
-    margin: 1rem;
+    margin: 0 1rem;
   }
   .navbar .toggler {
     text-align: center;
@@ -118,7 +116,7 @@
   display: flex;
   width: 50%;
   height: 88%;
-  background-color: #6ab258;
+  background-color: white;
   color: black;
   left: 0;
   bottom: 0;
@@ -155,7 +153,7 @@
   display: flex;
   width: 50%;
   height: 88%;
-  background-color: #6ab258;
+  background-color: black;
   color: rgb(206, 206, 206);
   right: 1px;
   bottom: 0;
@@ -194,5 +192,6 @@
 
 .switch input:checked + .toggle > .right {
   transform: rotateX(10deg) rotateY(0deg);
-  color: black;
+  color: white;
+  background-color: black;
 }

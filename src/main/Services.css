@@ -1,6 +1,6 @@
 #services {
   margin: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
 .services {
@@ -57,6 +57,9 @@
   }
   #services .title-col h1 {
     max-width: 100%;
+  }
+  #services .service-col {
+    padding-inline: 1rem;
   }
 }
 

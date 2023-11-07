@@ -18,12 +18,21 @@ body {
   color: white;
 }
 
+#dark-mode .ms-auto a {
+  background-color: transparent;
+}
+
 #dark-mode .toggler,
 #dark-mode .social-media a,
 #dark-mode .form-control,
 #dark-mode .send-btn {
   border: 2px solid white;
   color: white;
+}
+
+#dark-mode .social-media a:hover {
+  background-color: white;
+  color: black;
 }
 
 #dark-mode .form-control::placeholder {
@@ -58,12 +67,21 @@ body {
   color: black;
 }
 
+#light-mode .ms-auto a {
+  background-color: transparent;
+}
+
 #light-mode .toggler,
 #light-mode .social-media a,
 #light-mode .form-control,
 #light-mode .send-btn {
   border: 2px solid black;
   color: black;
+}
+
+#light-mode .social-media a:hover {
+  background-color: black;
+  color: white;
 }
 
 #light-mode .form-control::placeholder {

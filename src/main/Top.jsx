@@ -4,7 +4,7 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import { VscChromeClose } from "react-icons/vsc";
 import { TfiMenu } from "react-icons/tfi";
 import { ImFolderOpen } from "react-icons/im";
-import { FaPhoneVolume, FaUserTie } from "react-icons/fa6";
+import { FaPhone, FaUserTie } from "react-icons/fa6";
 import {
   MdLightMode,
   MdDarkMode,
@@ -33,7 +33,7 @@ function Top() {
       expand="md"
       className="navbar"
       expanded={expanded}
-      sticky="top"
+      fixed="top"
       id={isDarkMode ? "dark-mode" : "light-mode"}
     >
       <Container fluid>
@@ -105,7 +105,7 @@ function Top() {
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <FaPhoneVolume /> Contact
+              <FaPhone /> Contact
             </a>
           </Nav>
           <div className="switch-mode-desktop">

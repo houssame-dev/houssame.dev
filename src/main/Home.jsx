@@ -34,7 +34,7 @@ function Home() {
               </Col>
               <Col className="top-right">
                 <div className="available">
-                  <FaCircle color="#ffcc80" size={10} /> Available for Work
+                  <FaCircle color="#6ab258" size={10} /> Available for Work
                 </div>
                 <div className="date">
                   <MdDateRange /> {month} {currentYear}
@@ -46,10 +46,10 @@ function Home() {
             <Col className="mid">
               <InfiniteLooper speed="25" direction="left">
                 <div className="contentBlock contentBlock--one">
-                 * FRONT-END DEVELOPER *
+                * FRONT-END DEVELOPER *
                 </div>
                 <div className="contentBlock contentBlock--one">
-                 * FRONT-END DEVELOPER *
+                * FRONT-END DEVELOPER *
                 </div>
               </InfiniteLooper>
               <InfiniteLooper speed="25" direction="right">
