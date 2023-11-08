@@ -84,28 +84,28 @@ function Top() {
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <FaUserTie /> About
+              <FaUserTie /> ABOUT
             </a>
             <a
               href="#projects"
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <ImFolderOpen /> Projects
+              <ImFolderOpen /> PROJECTS
             </a>
             <a
               href="#services"
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <MdOutlineMiscellaneousServices /> Services
+              <MdOutlineMiscellaneousServices /> SERVICES
             </a>
             <a
               href="#contact"
               onClick={handleNavItemClick}
               id={isDarkMode ? "dark-mode" : "light-mode"}
             >
-              <FaPhone /> Contact
+              <FaPhone /> CONTACT
             </a>
           </Nav>
           <div className="switch-mode-desktop">

@@ -7,7 +7,7 @@
   min-height: 95vh;
   border: none;
   border-radius: 0;
-  padding: 2rem;
+  padding: 3rem 2rem 2rem;
   display: flex;
   justify-content: space-between;
   box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
@@ -19,8 +19,7 @@
   align-items: flex-start;
   font-weight: bold;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Aldrich", sans-serif;
 }
 
 #home .top-left {
@@ -67,8 +66,9 @@
 #home .mid {
   text-align: center;
   font-size: 13rem;
-  line-height: 80%;
+  line-height: 90%;
   font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
 }
 
 #home .bot {
@@ -77,8 +77,7 @@
   align-items: flex-end;
   font-weight: bold;
   font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Aldrich", sans-serif;
 }
 
 #home .bot-left {
@@ -148,10 +147,13 @@
   #home .bot-mid,
   #home .bot-right {
     display: block;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
     padding-block: 2rem;
-    text-align: center;
+    text-align: end;
+  }
+}
+
+@media (max-width: 350.5px) {
+  #home .home-card {
+    padding-inline: 1rem;
   }
 }
