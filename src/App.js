@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 7000);
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);

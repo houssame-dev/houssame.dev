@@ -3,6 +3,19 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  cursor: none;
+}
+
+.loading .col-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading .col-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boxes {
@@ -191,5 +204,128 @@
 
   100% {
     transform: translate(100%, 100%);
+  }
+}
+
+/* loader */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  scale: 1.5;
+  padding-top: 8rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.intern {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intern::before {
+  content: "100%";
+  animation: percent 6s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes percent {
+  0% {
+    content: "0%";
+  }
+
+  5% {
+    content: "5%";
+  }
+
+  10% {
+    content: "10%";
+  }
+
+  15% {
+    content: "15%";
+  }
+
+  20% {
+    content: "20%";
+  }
+
+  25% {
+    content: "25%";
+  }
+
+  30% {
+    content: "30%";
+  }
+
+  35% {
+    content: "35%";
+  }
+
+  40% {
+    content: "40%";
+  }
+
+  45% {
+    content: "45%";
+  }
+
+  50% {
+    content: "50%";
+  }
+
+  55% {
+    content: "55%";
+  }
+
+  60% {
+    content: "60%";
+  }
+
+  65% {
+    content: "65%";
+  }
+
+  70% {
+    content: "70%";
+  }
+
+  75% {
+    content: "75%";
+  }
+
+  80% {
+    content: "80%";
+  }
+
+  85% {
+    content: "85%";
+  }
+
+  90% {
+    content: "90%";
+  }
+  
+  95% {
+    content: "95%";
   }
 }
