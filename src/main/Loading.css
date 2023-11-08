@@ -215,7 +215,7 @@
   align-items: center;
   user-select: none;
   scale: 1.5;
-  padding-top: 8rem;
+  padding-top: 6rem;
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
@@ -324,7 +324,7 @@
   90% {
     content: "90%";
   }
-  
+
   95% {
     content: "95%";
   }
