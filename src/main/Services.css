@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -21,16 +21,15 @@
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 4vmax;
-  padding-block: 3rem;
   text-align: center;
   max-width: 50%;
+  padding-block: 3rem;
 }
 
 #services .service-col {
   display: flex;
   justify-content: center;
-  padding-block: 2rem;
-  padding-inline: 2rem;
+  padding: 2rem;
 }
 
 #services .service-col .card {
@@ -55,8 +54,12 @@
   #services {
     margin: 1rem;
   }
+  .services {
+    padding-block: 6rem;
+  }
   #services .title-col h1 {
     max-width: 100%;
+    padding-bottom: 2rem;
   }
   #services .service-col {
     padding-inline: 1rem;

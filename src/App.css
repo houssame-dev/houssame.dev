@@ -85,6 +85,32 @@ body {
   border: 2px solid white;
 }
 
+#dark-mode .projects-col .project-card .card-title,
+#dark-mode .projects-col .project-card .card-footer {
+  border: 2px solid white;
+}
+
+#dark-mode .projects-col .project-card .card-body {
+  border-inline: 2px solid white;
+}
+
+#dark-mode .projects-col .project-card .card-footer .div-btn .btn {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+#dark-mode .projects-col .project-card .card-footer .div-btn .btn:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+#dark-mode .projects-col .project-card .card-body .card-techs .badge {
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 /*------------------------*/
 
 /* Light Mode */
@@ -132,4 +158,30 @@ body {
 
 #light-mode .service-col .card {
   border: 2px solid black;
+}
+
+#light-mode .projects-col .project-card .card-title,
+#light-mode .projects-col .project-card .card-footer {
+  border: 2px solid black;
+}
+
+#light-mode .projects-col .project-card .card-body {
+  border-inline: 2px solid black;
+}
+
+#light-mode .projects-col .project-card .card-footer .div-btn .btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+#light-mode .projects-col .project-card .card-footer .div-btn .btn:hover {
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+#light-mode .projects-col .project-card .card-body .card-techs .badge {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }

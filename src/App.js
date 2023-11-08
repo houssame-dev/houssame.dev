@@ -8,6 +8,7 @@ import Contact from "./main/Contact";
 import { ThemeProvider } from "./main/ThemeContext";
 import Services from "./main/Services";
 import Loading from "./main/Loading";
+import Projects from "./main/Projects";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 100);
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,6 +30,7 @@ function App() {
           <Top />
           <Home />
           <About />
+          <Projects />
           <Services />
           <Contact />
         </ThemeProvider>

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 1rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -16,9 +16,9 @@
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 4vmax;
-  padding-block: 3rem;
   max-width: 50%;
   margin-inline: auto;
+  padding-block: 3rem;
 }
 
 #contact .contact-form {
@@ -118,8 +118,12 @@
   #contact {
     margin: 1rem;
   }
+  .contact {
+    padding-block: 6rem;
+  }
   #contact h1 {
     max-width: 100%;
+    padding-bottom: 2rem;
   }
   #contact .contact-form {
     max-width: 100%;

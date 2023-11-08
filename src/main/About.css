@@ -15,14 +15,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: 3rem;
 }
 
 #about .about-row .text-col h1 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 4vmax;
-  padding-block: 1rem;
   max-width: 50%;
 }
 
@@ -31,7 +29,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-align: justify;
-  padding-top: 2rem;
 }
 
 #about .about-row .text-col p .skills-title {
@@ -88,8 +85,15 @@
   #about {
     margin: 1rem;
   }
+  .about {
+    padding-block: 6rem;
+  }
+  #about .about-row .text-col {
+    padding-bottom: 2rem;
+  }
   #about .about-row .text-col h1 {
     max-width: 100%;
+    padding-bottom: 2rem;
   }
   #about .about-row .text-col p {
     max-width: 100%;

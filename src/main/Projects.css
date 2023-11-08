@@ -1,0 +1,143 @@
+#projects {
+  margin: 2rem;
+  box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+#projects h1 {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-size: 4vmax;
+  max-width: 50%;
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+
+#projects .projects-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#projects .projects-col .project-card {
+  background-color: transparent;
+  max-width: 40%;
+  min-height: 100%;
+  border: none;
+}
+
+#projects .projects-col .project-card .card-title {
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0;
+}
+
+#projects .projects-col .project-card .card-title img {
+  height: 30px;
+  background-color: black;
+  border-radius: 0;
+  padding: 2px;
+}
+
+#projects .projects-col .project-card .card-body {
+  border-radius: 0;
+  background-color: transparent;
+}
+
+#projects .projects-col .project-card .card-body .card-text {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+#projects .projects-col .project-card .card-body .card-techs {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#projects .projects-col .project-card .card-body .card-techs .badge {
+  border-radius: 0;
+  margin-right: 1rem;
+  font-weight: normal;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#projects .projects-col .project-card .card-footer {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+#projects .projects-col .project-card .card-footer .div-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+#projects .projects-col .project-card .card-footer .div-btn .btn {
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 950px) {
+  #projects .projects-col {
+    display: block;
+  }
+  #projects .projects-col .project-card {
+    background-color: transparent;
+    max-width: 100%;
+    border: none;
+    margin-inline: auto;
+    padding-block: 2rem;
+  }
+}
+
+@media (max-width: 767.5px) {
+  #projects {
+    margin: 1rem;
+  }
+  .projects {
+    padding-block: 6rem;
+  }
+  #projects h1 {
+    max-width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 424.5px) {
+  #projects .projects-col .project-card .card-footer .div-btn .btn .live,
+  #projects .projects-col .project-card .card-footer .div-btn .btn .source {
+    display: none;
+  }
+}
+
+@media (max-width: 329.5px) {
+  #projects .projects-col .project-card .card-footer .div-btn .btn span {
+    display: none;
+  }
+}
