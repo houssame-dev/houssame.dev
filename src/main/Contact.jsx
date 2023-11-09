@@ -75,7 +75,7 @@ function Contact() {
     <div id="contact">
       <div className="contact" id={isDarkMode ? "dark-mode" : "light-mode"}>
         <Container fluid>
-          <h1>WORK WITH ME , CONTACT ME , OR JUST SAY HELLO</h1>
+          <h1>Work With Me , Contact Me , Or Just Say HELLO</h1>
           <Row>
             <Col md={6} className="order-1">
               <div className="contact-form">

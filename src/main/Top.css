@@ -2,7 +2,7 @@
   margin: 0 2rem;
   border-radius: 0;
   padding: 0 1rem;
-  font-family: "Graduate", serif;
+  font-family: "Aldrich", sans-serif;
   box-shadow: rgb(0, 0, 0) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
 }
 
@@ -14,10 +14,6 @@
   cursor: url("./images/cursor-hover.png"), pointer;
 }
 
-.ms-auto {
-  gap: 1rem;
-}
-
 .ms-auto a {
   text-decoration: none;
   padding: 15px 10px;
@@ -26,6 +22,8 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: bold;
+  font-size: 1rem;
+  transition: 0.5s;
 }
 
 .ms-auto a:hover {

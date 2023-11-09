@@ -16,7 +16,7 @@ function About() {
           <Row className="about-row">
             <Col md={6} className="text-col">
               <div>
-                <h1>Getting to Know Me and My Skills</h1>
+                <h1>Getting To Know Me And My Skills</h1>
                 <p>
                   Hello there! My name is HOUSSAME ERRJEM, a passionate
                   front-end developer with a strong focus on React - NextJs.{" "}

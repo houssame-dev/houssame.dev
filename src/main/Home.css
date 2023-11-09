@@ -65,10 +65,10 @@
 
 #home .mid {
   text-align: center;
-  font-size: 13rem;
-  line-height: 90%;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: bold;
+  line-height: 70%;
+  font-size: 14rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 700;
 }
 
 #home .bot {
@@ -155,5 +155,17 @@
 @media (max-width: 350.5px) {
   #home .home-card {
     padding-inline: 1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #home .mid {
+    font-size: 17rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #home .mid {
+    font-size: 20rem;
   }
 }

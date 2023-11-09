@@ -24,7 +24,7 @@ function Projects() {
     <div id="projects">
       <div className="projects" id={isDarkMode ? "dark-mode" : "light-mode"}>
         <Container fluid>
-          <h1>Check out some of my programming projects</h1>
+          <h1>Check Out Some Of My Programming Projects</h1>
           <Row className="projects-row">
             <Col className="projects-col">
               <Card className="project-card">

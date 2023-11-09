@@ -20,7 +20,7 @@ function Services() {
         <Container fluid>
           <Row>
             <Col lg={12} className="title-col">
-              <h1>A List of the Comprehensive Services I Bring to the Table</h1>
+              <h1>A List Of The Comprehensive Services I Bring To The Table</h1>
             </Col>
             <Col lg={4} md={6} className="service-col">
               <Card id={isDarkMode ? "dark-mode" : "light-mode"}>

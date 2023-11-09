@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
   cursor: url("./main/images/cursor.png"), pointer;
@@ -50,6 +49,11 @@ body {
 
 #dark-mode .ms-auto a {
   background-color: transparent;
+}
+
+#dark-mode .ms-auto a:hover {
+  background-color: white;
+  color: black;
 }
 
 #dark-mode .toggler,
@@ -125,6 +129,11 @@ body {
 
 #light-mode .ms-auto a {
   background-color: transparent;
+}
+
+#light-mode .ms-auto a:hover {
+  background-color: black;
+  color: white;
 }
 
 #light-mode .toggler,
