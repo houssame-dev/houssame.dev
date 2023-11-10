@@ -13,6 +13,7 @@ import "./Contact.css";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import { useTheme } from "./ThemeContext";
+import { motion } from "framer-motion";
 
 function Contact() {
   const currentYear = new Date().getFullYear();
@@ -75,10 +76,35 @@ function Contact() {
     <div id="contact">
       <div className="contact" id={isDarkMode ? "dark-mode" : "light-mode"}>
         <Container fluid>
-          <h1>Work With Me , Contact Me , Or Just Say HELLO</h1>
+          <motion.h1
+            initial={{
+              opacity: 0,
+              x: -200,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
+          >
+            Work With Me , Contact Me , Or Just Say HELLO
+          </motion.h1>
           <Row>
             <Col md={6} className="order-1">
-              <div className="contact-form">
+              <motion.div
+                className="contact-form"
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Form onSubmit={handleSubmit} className="form">
                   <Form.Control
                     type="text"
@@ -114,10 +140,21 @@ function Contact() {
                     <BsSendFill /> <span>{buttonText}</span>
                   </Button>
                 </Form>
-              </div>
+              </motion.div>
             </Col>
             <Col md={6} className="order-2">
-              <div>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  x: 200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <div className="informations">
                   <div className="location">
                     <span>
@@ -161,7 +198,7 @@ function Contact() {
                 <div className="copyright">
                   &copy; {currentYear} {authorName}
                 </div>
-              </div>
+              </motion.div>
             </Col>
           </Row>
         </Container>

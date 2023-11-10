@@ -45,6 +45,7 @@
   align-items: center;
   gap: 1rem;
   border-radius: 0;
+  padding: 0.5rem;
 }
 
 #projects .projects-col .project-card .card-title img {
@@ -57,6 +58,7 @@
 #projects .projects-col .project-card .card-body {
   border-radius: 0;
   background-color: transparent;
+  padding: 0.5rem;
 }
 
 #projects .projects-col .project-card .card-body .card-text {
@@ -81,6 +83,7 @@
 #projects .projects-col .project-card .card-footer {
   background-color: transparent;
   border-radius: 0;
+  padding: 0.5rem;
 }
 
 #projects .projects-col .project-card .card-footer .div-btn {

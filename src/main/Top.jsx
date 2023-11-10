@@ -11,6 +11,7 @@ import {
   MdOutlineMiscellaneousServices,
 } from "react-icons/md";
 import { useTheme } from "./ThemeContext";
+import { motion } from "framer-motion";
 
 function Top() {
   const { toggleDarkMode } = useTheme();
@@ -27,6 +28,7 @@ function Top() {
   const logo = isDarkMode
     ? require("./images/my-logo-white.png")
     : require("./images/my-logo-black.png");
+
   return (
     <Navbar
       collapseOnSelect
@@ -38,14 +40,36 @@ function Top() {
     >
       <Container fluid>
         <Navbar.Brand>
-          <img
+          <motion.img
+            initial={{
+              opacity: 0,
+              x: -50,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
             src={logo}
             alt="logo"
             className="logo"
             onClick={handleNavbarBrandClick}
           />
         </Navbar.Brand>
-        <div className="switch-mode-mobile">
+        <motion.div
+          className="switch-mode-mobile"
+          initial={{
+            opacity: 0,
+            y: -50,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{ duration: 1, delay: 0 }}
+          viewport={{ once: true }}
+        >
           <label className="switch">
             <input type="checkbox" className="cb" onChange={toggleDarkMode} />
             <span className="toggle">
@@ -57,58 +81,148 @@ function Top() {
               </span>
             </span>
           </label>
-        </div>
+        </motion.div>
         {expanded ? (
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            className="toggler"
-            onClick={() => setExpanded(!expanded)}
-            id={isDarkMode ? "dark-mode" : "light-mode"}
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
           >
-            <VscChromeClose />
-          </Navbar.Toggle>
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              className="toggler"
+              onClick={() => setExpanded(!expanded)}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <VscChromeClose />
+            </Navbar.Toggle>
+          </motion.div>
         ) : (
-          <Navbar.Toggle
-            aria-controls="responsive-navbar-nav"
-            className="toggler"
-            onClick={() => setExpanded(!expanded)}
-            id={isDarkMode ? "dark-mode" : "light-mode"}
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: 50,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
           >
-            <TfiMenu />
-          </Navbar.Toggle>
+            <Navbar.Toggle
+              aria-controls="responsive-navbar-nav"
+              className="toggler"
+              onClick={() => setExpanded(!expanded)}
+              id={isDarkMode ? "dark-mode" : "light-mode"}
+            >
+              <TfiMenu />
+            </Navbar.Toggle>
+          </motion.div>
         )}
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <a
-              href="#about"
-              onClick={handleNavItemClick}
-              id={isDarkMode ? "dark-mode" : "light-mode"}
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -50,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ duration: 1, delay: 0 }}
+              viewport={{ once: true }}
             >
-              <FaUserTie /> About
-            </a>
-            <a
-              href="#projects"
-              onClick={handleNavItemClick}
-              id={isDarkMode ? "dark-mode" : "light-mode"}
+              <a
+                href="#about"
+                onClick={handleNavItemClick}
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+              >
+                <FaUserTie /> About
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -50,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ duration: 1, delay: 0.2 }}
+              viewport={{ once: true }}
             >
-              <ImFolderOpen /> Projects
-            </a>
-            <a
-              href="#services"
-              onClick={handleNavItemClick}
-              id={isDarkMode ? "dark-mode" : "light-mode"}
+              <a
+                href="#projects"
+                onClick={handleNavItemClick}
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+              >
+                <ImFolderOpen /> Projects
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -50,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ duration: 1, delay: 0.4 }}
+              viewport={{ once: true }}
             >
-              <MdOutlineMiscellaneousServices /> Services
-            </a>
-            <a
-              href="#contact"
-              onClick={handleNavItemClick}
-              id={isDarkMode ? "dark-mode" : "light-mode"}
+              <a
+                href="#services"
+                onClick={handleNavItemClick}
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+              >
+                <MdOutlineMiscellaneousServices /> Services
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: -50,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ duration: 1, delay: 0.6 }}
+              viewport={{ once: true }}
             >
-              <FaPhone /> Contact
-            </a>
+              <a
+                href="#contact"
+                onClick={handleNavItemClick}
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+              >
+                <FaPhone /> Contact
+              </a>
+            </motion.div>
           </Nav>
-          <div className="switch-mode-desktop">
+          <motion.div
+            className="switch-mode-desktop"
+            initial={{
+              opacity: 0,
+              x: 50,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1, delay: 0 }}
+            viewport={{ once: true }}
+          >
             <label className="switch">
               <input type="checkbox" className="cb" onChange={toggleDarkMode} />
               <span className="toggle">
@@ -120,7 +234,7 @@ function Top() {
                 </span>
               </span>
             </label>
-          </div>
+          </motion.div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

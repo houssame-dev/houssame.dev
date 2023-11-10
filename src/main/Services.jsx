@@ -11,6 +11,7 @@ import { FaMobileScreenButton, FaWrench } from "react-icons/fa6";
 import { IoShareSocialSharp, IoSpeedometer } from "react-icons/io5";
 import { GrMail } from "react-icons/gr";
 import { useTheme } from "./ThemeContext";
+import { motion } from "framer-motion";
 
 function Services() {
   const { isDarkMode } = useTheme();
@@ -20,10 +21,36 @@ function Services() {
         <Container fluid>
           <Row>
             <Col lg={12} className="title-col">
-              <h1>A List Of The Comprehensive Services I Bring To The Table</h1>
+              <motion.h1
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 0 }}
+                viewport={{ once: true }}
+              >
+                A List Of The Comprehensive Services I Bring To The Table
+              </motion.h1>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <MdOutlineWeb size={30} /> <br />
@@ -37,10 +64,23 @@ function Services() {
                     user experience.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <FaMobileScreenButton size={30} /> <br />
@@ -53,10 +93,23 @@ function Services() {
                     potential customers.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <IoSpeedometer size={30} /> <br />
@@ -69,10 +122,23 @@ function Services() {
                     in search engines!
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <MdSecurity size={30} /> <br />
@@ -84,10 +150,23 @@ function Services() {
                     Rest easy knowing your data is safe.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <MdOutlineScreenSearchDesktop size={30} /> <br />
@@ -100,10 +179,23 @@ function Services() {
                     engine rankings.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <MdLocalGroceryStore size={30} /> <br />
@@ -116,10 +208,23 @@ function Services() {
                     business.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <GrMail size={30} /> <br />
@@ -131,10 +236,23 @@ function Services() {
                     forms, making it simple for them to reach out to you.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <IoShareSocialSharp size={30} /> <br />
@@ -146,10 +264,23 @@ function Services() {
                     expanding your online reach.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
             <Col lg={4} md={6} className="service-col">
-              <Card id={isDarkMode ? "dark-mode" : "light-mode"}>
+              <motion.div
+                className="card"
+                id={isDarkMode ? "dark-mode" : "light-mode"}
+                initial={{
+                  opacity: 0,
+                  x: -200,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ duration: 1, delay: 1 }}
+                viewport={{ once: true }}
+              >
                 <Card.Body>
                   <Card.Title>
                     <FaWrench size={30} /> <br />
@@ -162,7 +293,7 @@ function Services() {
                     running smoothly.
                   </Card.Text>
                 </Card.Body>
-              </Card>
+              </motion.div>
             </Col>
           </Row>
         </Container>
