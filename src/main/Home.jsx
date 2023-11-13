@@ -2,10 +2,9 @@ import React from "react";
 import "./Home.css";
 import { Card, Row, Col } from "react-bootstrap";
 import { FaXTwitter, FaGithub, FaCircle, FaLinkedinIn } from "react-icons/fa6";
-import { FaCode } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { HiLink } from "react-icons/hi";
-import { IoIosColorPalette, IoMdHand } from "react-icons/io";
+import { IoMdHand } from "react-icons/io";
 import { useTheme } from "./ThemeContext";
 import InfiniteLooper from "./InfiniteLooper";
 import { motion } from "framer-motion";
@@ -141,54 +140,14 @@ function Home() {
             <Col className="bot">
               <Col className="bot-left">
                 <motion.div
-                  className="designed"
-                  initial={{
-                    opacity: 0,
-                    x: -200,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 0,
-                  }}
-                  transition={{ duration: 1, delay: 0 }}
-                  viewport={{ once: true }}
-                >
-                  <IoIosColorPalette /> Designed by:{" "}
-                  <a
-                    href="http://yahyavision.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    id={isDarkMode ? "dark-mode" : "light-mode"}
-                  >
-                    Yahyavision
-                  </a>
-                </motion.div>
-                <motion.div
-                  className="developed"
-                  initial={{
-                    opacity: 0,
-                    x: -200,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    x: 0,
-                  }}
-                  transition={{ duration: 1, delay: 1 }}
-                  viewport={{ once: true }}
-                >
-                  <FaCode /> Developed by: <span>Houssame</span>
-                </motion.div>
-              </Col>
-              <Col className="bot-mid">
-                <motion.div
                   className="social-media"
                   initial={{
                     opacity: 0,
-                    y: 20,
+                    x: -150,
                   }}
                   whileInView={{
                     opacity: 1,
-                    y: 0,
+                    x: 0,
                   }}
                   transition={{ duration: 1, delay: 0 }}
                   viewport={{ once: true }}
