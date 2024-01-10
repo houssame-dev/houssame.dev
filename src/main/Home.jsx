@@ -1,7 +1,13 @@
 import React from "react";
 import "./Home.css";
 import { Card, Row, Col } from "react-bootstrap";
-import { FaXTwitter, FaGithub, FaCircle, FaLinkedinIn } from "react-icons/fa6";
+import {
+  FaXTwitter,
+  FaGithub,
+  FaCircle,
+  FaLinkedinIn,
+  FaCodepen,
+} from "react-icons/fa6";
 import { MdDateRange } from "react-icons/md";
 import { HiLink } from "react-icons/hi";
 import { IoMdHand } from "react-icons/io";
@@ -106,10 +112,10 @@ function Home() {
               >
                 <InfiniteLooper speed="25" direction="left">
                   <div className="contentBlock contentBlock--one">
-                    * FRONT-END DEVELOPER *
+                    * FULL-STACK DEVELOPER *
                   </div>
                   <div className="contentBlock contentBlock--one">
-                    * FRONT-END DEVELOPER *
+                    * FULL-STACK DEVELOPER *
                   </div>
                 </InfiniteLooper>
               </motion.div>
@@ -152,6 +158,14 @@ function Home() {
                   transition={{ duration: 1, delay: 0 }}
                   viewport={{ once: true }}
                 >
+                  <a
+                    href="https://codepen.io/Houssame-Errjem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    id={isDarkMode ? "dark-mode" : "light-mode"}
+                  >
+                    <FaCodepen size={15} />
+                  </a>
                   <a
                     href="https://www.linkedin.com/in/houssame-errjem-93099a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     target="_blank"
