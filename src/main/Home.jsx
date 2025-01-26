@@ -112,10 +112,10 @@ function Home() {
               >
                 <InfiniteLooper speed="25" direction="left">
                   <div className="contentBlock contentBlock--one">
-                    * FULL-STACK DEVELOPER *
+                    * FRONT-END DEVELOPER *
                   </div>
                   <div className="contentBlock contentBlock--one">
-                    * FULL-STACK DEVELOPER *
+                    * FRONT-END DEVELOPER *
                   </div>
                 </InfiniteLooper>
               </motion.div>
