@@ -44,7 +44,7 @@ function About() {
                   viewport={{ once: true }}
                 >
                   Hello there! My name is HOUSSAME ERRJEM, a passionate
-                  full-stack developer with a strong focus on React - NextJs.{" "}
+                  front-end developer with a strong focus on React - NextJs.{" "}
                   <br />
                   I thrive on turning creative ideas into exquisitely crafted,
                   user-friendly web applications that not only boast a visually
