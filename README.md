@@ -29,7 +29,7 @@ Here are some of the projects I've worked on using React. You can find more deta
 1. [story-corner](https://github.com/Errjem/Story-Corner)
    - Description: A modern blog application where users can create their own accounts, post their stories, like other users' stories, and modify or delete their own stories.
    - Technologies Used: React, HTML, CSS, etc.
-   - Demo: [Link to Live Demo](https://story-corner.netlify.app/)
+   - Demo: [Link to Live Demo](https://storycorner.netlify.app/)
 
 Feel free to explore these projects and provide feedback!
 
