@@ -1,6 +1,6 @@
-# My Frontend Developer Portfolio
+# My Full Stack Developer Portfolio
 
-Welcome to my frontend developer portfolio! This repository showcases my skills and projects as a frontend developer, all built using React. Here, you can explore my work, learn about my background, and get in touch with me.
+Welcome to my full stack developer portfolio! This repository showcases my skills and projects as a full stack developer, all built using React. Here, you can explore my work, learn about my background, and get in touch with me.
 
 ## Table of Contents
 
@@ -14,12 +14,12 @@ Welcome to my frontend developer portfolio! This repository showcases my skills 
 
 ## About Me
 
-I am a passionate frontend developer with a strong foundation in web development. I love creating interactive and user-friendly web applications. Here's a bit about me:
+I am a passionate full stack developer with a strong foundation in web development. I love creating interactive and user-friendly web applications. Here's a bit about me:
 
 - **Name:** Houssame Errjem
 - **Location:** Morocco
 - **Email:** houssame.dev@gmail.com
-- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-dev/)
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-err-010440343/)
 - **Portfolio Website:** [My Website](https://houssamedev.netlify.app/)
 
 ## Projects
@@ -67,6 +67,17 @@ To run the projects locally or explore the code, follow these steps:
    ```bash
    npm install
 
+4. Set up environment variables:
+   
+   Create a `.env` file in the root directory and add your EmailJS credentials:
+   
+   ```bash
+   REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+   REACT_APP_EMAILJS_USER_ID=your_user_id
+   ```
+   
+   You can use `.env.example` as a template.
 
 ## Usage
 
@@ -84,7 +95,7 @@ This command will start the development server, and you can access the portfolio
 I'm always open to collaboration and new opportunities. Feel free to reach out to me via email or connect with me on LinkedIn:
 
 - **Email:** houssame.dev@gmail.com
-- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-dev/) <br/>
+- **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/houssame-err-010440343/) <br/>
 Let's create something amazing together!
 
 ## License

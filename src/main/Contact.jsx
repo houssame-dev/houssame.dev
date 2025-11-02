@@ -44,10 +44,10 @@ function Contact() {
     setButtonText("Sending...");
     try {
       const response = await emailjs.send(
-        "service_5g86bvb",
-        "template_b604zli",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formData,
-        "7eh_QUyc94E3Tno_0"
+        process.env.REACT_APP_EMAILJS_USER_ID
       );
 
       console.log("Message sent successfully:", response);
@@ -180,7 +180,7 @@ function Contact() {
                     <FaCodepen size={15} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/houssame-errjem-93099a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    href="https://www.linkedin.com/in/houssame-err-010440343/"
                     target="_blank"
                     rel="noopener noreferrer"
                     id={isDarkMode ? "dark-mode" : "light-mode"}

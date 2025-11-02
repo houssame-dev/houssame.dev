@@ -112,10 +112,10 @@ function Home() {
               >
                 <InfiniteLooper speed="25" direction="left">
                   <div className="contentBlock contentBlock--one">
-                    * FRONT-END DEVELOPER *
+                    * FULL STACK DEVELOPER *
                   </div>
                   <div className="contentBlock contentBlock--one">
-                    * FRONT-END DEVELOPER *
+                    * FULL STACK DEVELOPER *
                   </div>
                 </InfiniteLooper>
               </motion.div>
@@ -167,7 +167,7 @@ function Home() {
                     <FaCodepen size={15} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/houssame-errjem-93099a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    href="https://www.linkedin.com/in/houssame-err-010440343/"
                     target="_blank"
                     rel="noopener noreferrer"
                     id={isDarkMode ? "dark-mode" : "light-mode"}

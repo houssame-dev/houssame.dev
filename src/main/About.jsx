@@ -44,7 +44,7 @@ function About() {
                   viewport={{ once: true }}
                 >
                   Hello there! My name is HOUSSAME ERRJEM, a passionate
-                  front-end developer with a strong focus on React - NextJs.{" "}
+                  full stack developer with a strong focus on React - NextJs.{" "}
                   <br />
                   I thrive on turning creative ideas into exquisitely crafted,
                   user-friendly web applications that not only boast a visually
@@ -70,9 +70,9 @@ function About() {
                   <span className="skills-title">SKILLS:</span>{" "}
                   <span className="skills">
                     HTML and CSS / JavaScript / Git / React / Next.js /
-                    Bootstrap / Material UI / Tailwind CSS / MongoDB /
-                    Express.js / Node.js / UI/UX Design / Figma / still
-                    learning...
+                    Bootstrap / Material UI / Tailwind CSS / Laravel / MySQL /
+                    MongoDB / Express.js / Node.js / Grafana / UI/UX Design /
+                    Figma / still learning...
                   </span>
                 </motion.p>
               </div>
